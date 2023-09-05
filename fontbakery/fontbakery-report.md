@@ -3142,7 +3142,7 @@ Width = 543:
 logicalnot
 
 Width = 572:
-lessequal, plusminus
+plusminus, lessequal
 
 Width = 551:
 multiply
@@ -4670,7 +4670,7 @@ Width = 442:
 logicalnot
 
 Width = 479:
-plusminus, minus, divide
+minus, plusminus, divide
 
 Width = 433:
 multiply
@@ -8300,7 +8300,7 @@ Width = 374:
 multiply
 
 Width = 432:
-divide, minus
+minus, divide
 
 Width = 422:
 lessequal
