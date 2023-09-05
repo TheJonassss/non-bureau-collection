@@ -264,7 +264,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 463:
-greater, less
+less, greater
 
 Width = 602:
 logicalnot
@@ -650,7 +650,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 476:
-greater, less
+less, greater
 
 Width = 502:
 logicalnot
@@ -757,9 +757,9 @@ greaterequal, lessequal
 
 	* florin (U+0192): X=10.0,Y=-2.0 (should be at baseline 0?)
 
-	* uni01CE (U+01CE): X=427.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=428.0,Y=713.0 (should be at cap-height 714?)
 
-	* uni01CE (U+01CE): X=164.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=165.0,Y=713.0 (should be at cap-height 714?)
 
 	* uni01D2 (U+01D2): X=465.0,Y=713.0 (should be at cap-height 714?)
 
@@ -1260,7 +1260,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 466:
-greater, less
+less, greater
 
 Width = 577:
 logicalnot
@@ -1720,7 +1720,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 440:
-greater, less
+less, greater
 
 Width = 417:
 logicalnot
@@ -2056,7 +2056,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 483:
-greater, less
+less, greater
 
 Width = 452:
 logicalnot
@@ -2584,7 +2584,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 473:
-greater, less
+less, greater
 
 Width = 527:
 logicalnot
@@ -2685,9 +2685,9 @@ greaterequal, lessequal
 
 	* florin (U+0192): X=10.0,Y=-1.0 (should be at baseline 0?)
 
-	* uni01CE (U+01CE): X=449.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=450.0,Y=713.0 (should be at cap-height 714?)
 
-	* uni01CE (U+01CE): X=163.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=164.0,Y=713.0 (should be at cap-height 714?)
 
 	* uni01D2 (U+01D2): X=482.0,Y=713.0 (should be at cap-height 714?)
 
@@ -3206,7 +3206,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 424:
-greater, less
+less, greater
 
 Width = 543:
 logicalnot
@@ -3565,7 +3565,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 430:
-greater, less
+less, greater
 
 Width = 493:
 logicalnot
@@ -3879,7 +3879,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 433:
-greater, less
+less, greater
 
 Width = 467:
 logicalnot
@@ -3978,9 +3978,9 @@ greaterequal, lessequal
 
 	* uni019B (U+019B): X=469.0,Y=-1.5 (should be at baseline 0?)
 
-	* uni01CE (U+01CE): X=396.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=399.0,Y=713.0 (should be at cap-height 714?)
 
-	* uni01CE (U+01CE): X=110.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=113.0,Y=713.0 (should be at cap-height 714?)
 
 	* uni01D2 (U+01D2): X=424.0,Y=713.0 (should be at cap-height 714?)
 
@@ -4457,7 +4457,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 464:
-greater, less
+less, greater
 
 Width = 603:
 logicalnot
@@ -4774,19 +4774,19 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 437:
-greater, less
+less, greater
 
 Width = 442:
 logicalnot
 
 Width = 479:
-divide, plusminus, minus
+minus, plusminus, divide
 
 Width = 433:
 multiply
 
 Width = 470:
-approxequal, greaterequal
+greaterequal, approxequal
 
 Width = 472:
 lessequal
@@ -5094,7 +5094,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, greater, less
+less, greater, approxequal
 
 Width = 392:
 logicalnot
@@ -5592,7 +5592,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 426:
-greater, less
+less, greater
 
 Width = 517:
 logicalnot
@@ -5957,7 +5957,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 440:
-greater, less
+less, greater
 
 Width = 417:
 logicalnot
@@ -6345,7 +6345,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 480:
-greater, less
+less, greater
 
 Width = 477:
 logicalnot
@@ -6697,7 +6697,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 467:
-greater, less
+less, greater
 
 Width = 578:
 logicalnot
@@ -7052,7 +7052,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 470:
-greater, less
+less, greater
 
 Width = 553:
 logicalnot
@@ -7397,7 +7397,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 474:
-greater, less
+less, greater
 
 Width = 528:
 logicalnot
@@ -7739,7 +7739,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 423:
-greater, less
+less, greater
 
 Width = 542:
 logicalnot
@@ -8119,7 +8119,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 477:
-greater, less
+less, greater
 
 Width = 580:
 equal
@@ -8501,7 +8501,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, greater, less
+less, greater, approxequal
 
 Width = 392:
 logicalnot
@@ -8510,7 +8510,7 @@ Width = 374:
 multiply
 
 Width = 432:
-divide, minus
+minus, divide
 
 Width = 422:
 lessequal
@@ -8841,7 +8841,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 427:
-greater, less
+less, greater
 
 Width = 518:
 logicalnot
@@ -9183,7 +9183,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 470:
-greater, less
+less, greater
 
 Width = 552:
 logicalnot
@@ -9542,7 +9542,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 430:
-greater, less
+less, greater
 
 Width = 492:
 logicalnot
@@ -9635,9 +9635,9 @@ greaterequal, lessequal
 
 	* tbar (U+0167): X=380.0,Y=-1.0 (should be at baseline 0?)
 
-	* uni01CE (U+01CE): X=415.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=419.0,Y=713.0 (should be at cap-height 714?)
 
-	* uni01CE (U+01CE): X=106.0,Y=713.0 (should be at cap-height 714?)
+	* uni01CE (U+01CE): X=110.0,Y=713.0 (should be at cap-height 714?)
 
 	* uni01D2 (U+01D2): X=442.0,Y=713.0 (should be at cap-height 714?)
 
@@ -10077,7 +10077,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 436:
-greater, less
+less, greater
 
 Width = 442:
 logicalnot
@@ -10415,7 +10415,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 483:
-greater, less
+less, greater
 
 Width = 533:
 equal
@@ -10759,7 +10759,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 434:
-greater, less
+less, greater
 
 Width = 468:
 logicalnot
@@ -11076,7 +11076,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 480:
-greater, less
+less, greater
 
 Width = 477:
 logicalnot
