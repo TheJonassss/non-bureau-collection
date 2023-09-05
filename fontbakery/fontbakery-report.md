@@ -4780,7 +4780,7 @@ Width = 442:
 logicalnot
 
 Width = 479:
-minus, plusminus, divide
+plusminus, minus, divide
 
 Width = 433:
 multiply
@@ -5094,7 +5094,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, less, greater
+less, approxequal, greater
 
 Width = 392:
 logicalnot
@@ -8501,7 +8501,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, less, greater
+less, approxequal, greater
 
 Width = 392:
 logicalnot
