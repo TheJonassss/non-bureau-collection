@@ -1,7 +1,10 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
+  - 01-NonBureau-Normal.glyphs
+  - 02-NonBureau-Italic.glyphs
+  - 03-NonBureau-Extended.glyphs
+  - 04-NonBureau-Extended-Italic.glyphs
+
 axisOrder:
   - wght
   - ital
-familyName: Rubik
+familyName: Non Bureau Collection
