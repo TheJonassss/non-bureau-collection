@@ -264,7 +264,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 463:
-less, greater
+greater, less
 
 Width = 602:
 logicalnot
@@ -279,7 +279,7 @@ Width = 643:
 approxequal
 
 Width = 562:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -650,7 +650,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 476:
-less, greater
+greater, less
 
 Width = 502:
 logicalnot
@@ -668,7 +668,7 @@ Width = 585:
 notequal
 
 Width = 469:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -1260,7 +1260,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 466:
-less, greater
+greater, less
 
 Width = 577:
 logicalnot
@@ -1278,7 +1278,7 @@ Width = 650:
 notequal
 
 Width = 539:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -1720,7 +1720,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 440:
-less, greater
+greater, less
 
 Width = 417:
 logicalnot
@@ -2056,7 +2056,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 483:
-less, greater
+greater, less
 
 Width = 452:
 logicalnot
@@ -2074,7 +2074,7 @@ Width = 542:
 notequal
 
 Width = 422:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -2584,7 +2584,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 473:
-less, greater
+greater, less
 
 Width = 527:
 logicalnot
@@ -2602,7 +2602,7 @@ Width = 607:
 notequal
 
 Width = 492:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -3206,13 +3206,13 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 424:
-less, greater
+greater, less
 
 Width = 543:
 logicalnot
 
 Width = 572:
-lessequal, plusminus
+plusminus, lessequal
 
 Width = 551:
 multiply
@@ -3565,7 +3565,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 430:
-less, greater
+greater, less
 
 Width = 493:
 logicalnot
@@ -3879,7 +3879,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 433:
-less, greater
+greater, less
 
 Width = 467:
 logicalnot
@@ -3891,7 +3891,7 @@ Width = 483:
 approxequal
 
 Width = 492:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -4457,7 +4457,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 464:
-less, greater
+greater, less
 
 Width = 603:
 logicalnot
@@ -4774,13 +4774,13 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 437:
-less, greater
+greater, less
 
 Width = 442:
 logicalnot
 
 Width = 479:
-divide, minus, plusminus
+divide, plusminus, minus
 
 Width = 433:
 multiply
@@ -5094,7 +5094,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, less, greater
+approxequal, greater, less
 
 Width = 392:
 logicalnot
@@ -5103,7 +5103,7 @@ Width = 374:
 multiply
 
 Width = 422:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -5592,7 +5592,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 426:
-less, greater
+greater, less
 
 Width = 517:
 logicalnot
@@ -5604,7 +5604,7 @@ Width = 510:
 approxequal
 
 Width = 539:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -5957,7 +5957,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 440:
-less, greater
+greater, less
 
 Width = 417:
 logicalnot
@@ -5969,7 +5969,7 @@ Width = 456:
 approxequal
 
 Width = 445:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -6345,7 +6345,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 480:
-less, greater
+greater, less
 
 Width = 477:
 logicalnot
@@ -6697,7 +6697,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 467:
-less, greater
+greater, less
 
 Width = 578:
 logicalnot
@@ -7052,7 +7052,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 470:
-less, greater
+greater, less
 
 Width = 553:
 logicalnot
@@ -7397,7 +7397,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 474:
-less, greater
+greater, less
 
 Width = 528:
 logicalnot
@@ -7739,7 +7739,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 423:
-less, greater
+greater, less
 
 Width = 542:
 logicalnot
@@ -7751,7 +7751,7 @@ Width = 523:
 approxequal
 
 Width = 562:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -8119,7 +8119,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 477:
-less, greater
+greater, less
 
 Width = 580:
 equal
@@ -8501,7 +8501,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 443:
-approxequal, less, greater
+approxequal, greater, less
 
 Width = 392:
 logicalnot
@@ -8841,7 +8841,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 427:
-less, greater
+greater, less
 
 Width = 518:
 logicalnot
@@ -9183,7 +9183,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 470:
-less, greater
+greater, less
 
 Width = 552:
 logicalnot
@@ -9201,7 +9201,7 @@ Width = 629:
 notequal
 
 Width = 515:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -9542,7 +9542,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 430:
-less, greater
+greater, less
 
 Width = 492:
 logicalnot
@@ -9554,7 +9554,7 @@ Width = 496:
 approxequal
 
 Width = 515:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -10077,7 +10077,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 436:
-less, greater
+greater, less
 
 Width = 442:
 logicalnot
@@ -10089,7 +10089,7 @@ Width = 470:
 approxequal
 
 Width = 469:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
@@ -10415,7 +10415,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 483:
-less, greater
+greater, less
 
 Width = 533:
 equal
@@ -10759,7 +10759,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 434:
-less, greater
+greater, less
 
 Width = 468:
 logicalnot
@@ -11076,7 +11076,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 480:
-less, greater
+greater, less
 
 Width = 477:
 logicalnot
@@ -11094,7 +11094,7 @@ Width = 564:
 notequal
 
 Width = 445:
-lessequal, greaterequal
+greaterequal, lessequal
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
