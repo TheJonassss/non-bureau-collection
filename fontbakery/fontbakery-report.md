@@ -42,7 +42,7 @@ Fontbakery version: 0.8.13
   - NonBureauExtendedItalic-Medium.ttf (nameID 16)
   - NonBureauExtendedItalic-Regular.ttf (nameID 16)
   - NonBureauExtendedItalic-Thin.ttf (nameID 16) [code: inconsistent-family-name]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtended-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtended-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -58,11 +58,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -483,7 +487,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni2116 (U+2116): L<<895.0,128.0>--<1384.0,129.0>> 
 
 	* uniAB53 (U+AB53): L<<10.0,361.0>--<11.0,521.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureauExtended-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -499,11 +503,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1092,7 +1100,7 @@ plusminus
 	* uni20BD (U+20BD): L<<235.0,197.0>--<406.0,198.0>> 
 
 	* uni25B5 (U+25B5): L<<546.0,112.0>--<20.0,113.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtended-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtended-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -1108,11 +1116,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1564,7 +1576,7 @@ plusminus
 	* uni2116 (U+2116): L<<872.0,114.0>--<1360.0,115.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[27] NonBureauItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -1580,11 +1592,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -1931,7 +1947,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<52.0,409.0>--<55.0,520.0>> -> L<<55.0,520.0>--<70.0,730.0>> 
 
 	* zeta (U+03B6): L<<411.0,562.0>--<409.0,527.0>> -> L<<409.0,527.0>--<408.0,500.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -1947,11 +1963,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -2275,7 +2295,7 @@ plusminus
 	* estimated (U+212E): L<<616.0,347.0>--<615.0,499.0>> 
 
 	* uni25B5 (U+25B5): L<<502.0,133.0>--<20.0,134.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[27] NonBureauExtended-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -2291,11 +2311,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -2881,7 +2905,7 @@ plusminus
 	* uni2116 (U+2116): L<<1312.0,1.0>--<825.0,0.0>> 
 
 	* uni2116 (U+2116): L<<825.0,85.0>--<1312.0,86.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -2897,11 +2921,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -3236,7 +3264,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<35.0,409.0>--<38.0,520.0>> -> L<<38.0,520.0>--<53.0,730.0>> 
 
 	* zeta (U+03B6): L<<496.0,564.0>--<487.0,438.0>> -> L<<487.0,438.0>--<487.0,401.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[27] NonBureauItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -3252,11 +3280,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -3589,7 +3621,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> 
 
 	* zeta (U+03B6): L<<462.0,563.0>--<456.0,474.0>> -> L<<456.0,474.0>--<455.0,441.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -3605,11 +3637,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -4160,7 +4196,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,315.0>--<723.0,316.0>> 
 
 	* uni20B4 (U+20B4): L<<51.0,455.0>--<468.0,456.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[30] NonBureauExtendedItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -4176,11 +4212,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -4511,7 +4551,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
 	* dcroat (U+0111): L<<468.0,0.0>--<491.0,37.0>>/L<<491.0,37.0>--<489.0,35.0>> = 13.134022306396327 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[23] NonBureauItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -4527,11 +4567,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -4849,7 +4893,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> 
 
 	* zeta (U+03B6): L<<428.0,563.0>--<424.0,509.0>> -> L<<424.0,509.0>--<424.0,480.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[24] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -4865,11 +4909,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -5353,7 +5401,7 @@ The following glyphs do not have the recommended number of contours:
 	* estimated (U+212E): L<<536.0,347.0>--<535.0,509.0>> 
 
 	* oe (U+0153): L<<884.0,255.0>--<495.0,254.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[27] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -5369,11 +5417,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -5774,7 +5826,7 @@ logicalnot
 	* uni20BD (U+20BD): L<<330.0,198.0>--<507.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[24] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -5790,11 +5842,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -6159,7 +6215,7 @@ logicalnot
 	* uni04EB (U+04EB): L<<105.0,302.0>--<433.0,303.0>> 
 
 	* uni20B4 (U+20B4): L<<26.0,308.0>--<711.0,309.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -6175,11 +6231,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -6520,7 +6580,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<128.0,730.0>--<113.0,520.0>> -> L<<113.0,520.0>--<100.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<52.0,409.0>--<55.0,520.0>> -> L<<55.0,520.0>--<70.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -6536,11 +6596,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -6880,7 +6944,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<188.0,730.0>--<173.0,520.0>> -> L<<173.0,520.0>--<160.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -6896,11 +6960,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -7233,7 +7301,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<173.0,730.0>--<158.0,520.0>> -> L<<158.0,520.0>--<145.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -7249,11 +7317,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -7596,7 +7668,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<158.0,730.0>--<143.0,520.0>> -> L<<143.0,520.0>--<130.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -7612,11 +7684,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -7993,7 +8069,7 @@ logicalnot
 	* uni20BD (U+20BD): L<<360.0,198.0>--<539.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<10.0,361.0>--<11.0,521.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -8009,11 +8085,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -8358,7 +8438,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<143.0,730.0>--<128.0,520.0>> -> L<<128.0,520.0>--<115.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[27] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -8374,11 +8454,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -8705,7 +8789,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<55.0,409.0>--<58.0,520.0>> -> L<<58.0,520.0>--<73.0,730.0>> 
 
 	* zeta (U+03B6): L<<394.0,562.0>--<393.0,545.0>> -> L<<393.0,545.0>--<392.0,520.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[27] NonBureauItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -8721,11 +8805,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -9071,7 +9159,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> 
 
 	* zeta (U+03B6): L<<479.0,564.0>--<471.0,456.0>> -> L<<471.0,456.0>--<471.0,421.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureauExtended-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -9087,11 +9175,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -9461,7 +9553,7 @@ plusminus
 	* uni2116 (U+2116): L<<848.0,99.0>--<1336.0,100.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -9477,11 +9569,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -10038,7 +10134,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,318.0>--<729.0,319.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[24] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -10054,11 +10150,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -10373,7 +10473,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<51.0,457.0>--<481.0,458.0>> 
 
 	* uni20BD (U+20BD): L<<239.0,197.0>--<410.0,198.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -10389,11 +10489,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -10724,7 +10828,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<113.0,730.0>--<98.0,520.0>> -> L<<98.0,520.0>--<85.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<55.0,409.0>--<58.0,520.0>> -> L<<58.0,520.0>--<73.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[27] NonBureauItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -10740,11 +10844,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -11081,7 +11189,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> 
 
 	* zeta (U+03B6): L<<445.0,563.0>--<440.0,492.0>> -> L<<440.0,492.0>--<440.0,461.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureauExtended-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
 * 🔥 **FAIL** In this font fsType is set to 8 meaning that:
@@ -11097,11 +11205,15 @@ No such DRM restrictions can be enabled on the Google Fonts collection, so the f
 
 * 🔥 **FAIL** First line in license file is:
 
-"designed by jona saucedo, copyright © 2023 by non foundry. all rights reserved."
+"copyright © 2023 by non foundry. all rights reserved."
 
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check OFL body text is correct. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_body_text">com.google.fonts/check/license/OFL_body_text</a>)</summary><div>
+
+
+* 🔥 **FAIL** The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -11471,7 +11583,7 @@ plusminus
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 384 | 359 | 3320 | 176 | 2190 | 0 |
+| 0 | 412 | 359 | 3320 | 176 | 2162 | 0 |
 | 0% | 6% | 6% | 52% | 3% | 34% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
