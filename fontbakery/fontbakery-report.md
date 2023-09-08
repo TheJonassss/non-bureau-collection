@@ -20,7 +20,7 @@ Fontbakery version: 0.8.13
   - NonBureauItalic-Light.ttf (nameID 16)
   - NonBureauItalic-Black.ttf (nameID 16)
   - NonBureauItalic-SemiBold.ttf (nameID 16)
-  - NonBureauItalic-Regular.ttf (nameID 1)
+  - NonBureauItalic-Regular.ttf (nameID 16)
   - NonBureauItalic-Thin.ttf (nameID 16)
   - NonBureauItalic-Bold.ttf (nameID 16)
   - NonBureauItalic-Medium.ttf (nameID 16)
@@ -42,14 +42,7 @@ Fontbakery version: 0.8.13
   - NonBureauExtendedItalic-Medium.ttf (nameID 16)
   - NonBureauExtendedItalic-Regular.ttf (nameID 16)
   - NonBureauExtendedItalic-Thin.ttf (nameID 16) [code: inconsistent-family-name]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtended-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -89,7 +82,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Light | Non Bureau Extended Black |
+| Family Name | Non Bureau Extended Thin | Non Bureau Extended Black |
 | Subfamily Name | Bold | Regular |
 | Full Name | Non Bureau Extended Black | Non Bureau Extended Black |
 | Poscript Name | NonBureauExtended-Black | NonBureauExtended-Black |
@@ -98,15 +91,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -171,35 +161,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Black' does not begin with the font family name 'Non Bureau Extended Light' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Black' does not begin with the font family name 'Non Bureau Extended Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -216,7 +183,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Light' / SUBFAMILY_NAME = 'Bold'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Thin' / SUBFAMILY_NAME = 'Bold'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -310,7 +277,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -369,6 +336,8 @@ The following glyphs do not have the recommended number of contours:
 	* uni04FD (U+04FD): L<<384.0,1.0>--<377.0,11.0>> -> L<<377.0,11.0>--<306.0,110.0>>
 
 	* uni04FD (U+04FD): L<<413.0,260.0>--<518.0,115.0>> -> L<<518.0,115.0>--<533.0,95.0>>
+
+	* uni051B (U+051B): L<<494.0,-216.0>--<494.0,-29.0>> -> L<<494.0,-29.0>--<499.0,23.0>>
 
 	* uni1E0D (U+1E0D): L<<499.0,497.0>--<494.0,549.0>> -> L<<494.0,549.0>--<494.0,736.0>>
 
@@ -446,6 +415,14 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0451 (U+0451): L<<232.0,314.0>--<480.0,315.0>>
 
+	* uni046A (U+046A): L<<396.0,0.0>--<397.0,230.0>>
+
+	* uni046A (U+046A): L<<607.0,230.0>--<606.0,0.0>>
+
+	* uni046B (U+046B): L<<283.0,0.0>--<284.0,168.0>>
+
+	* uni046B (U+046B): L<<481.0,168.0>--<480.0,0.0>>
+
 	* uni0496 (U+0496): L<<512.0,0.0>--<511.0,299.0>>
 
 	* uni04BC (U+04BC): L<<438.0,444.0>--<792.0,445.0>>
@@ -487,14 +464,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni2116 (U+2116): L<<895.0,128.0>--<1384.0,129.0>> 
 
 	* uniAB53 (U+AB53): L<<10.0,361.0>--<11.0,521.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureauExtended-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -530,15 +500,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -596,29 +563,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -731,21 +675,13 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* f (U+0066): X=120.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=131.0,Y=-216.0 (should be at descender -217?)
-
-	* p (U+0070): X=33.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=636.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=538.0,Y=-216.0 (should be at descender -217?)
 
 	* r (U+0072): X=396.0,Y=521.0 (should be at x-height 520?)
 
@@ -759,10 +695,6 @@ plusminus
 
 	* sterling (U+00A3): X=333.0,Y=714.5 (should be at cap-height 714?)
 
-	* paragraph (U+00B6): X=574.0,Y=-216.0 (should be at descender -217?)
-
-	* paragraph (U+00B6): X=477.0,Y=-216.0 (should be at descender -217?)
-
 	* onehalf (U+00BD): X=347.0,Y=1.0 (should be at baseline 0?)
 
 	* onehalf (U+00BD): X=587.0,Y=1.0 (should be at baseline 0?)
@@ -770,10 +702,6 @@ plusminus
 	* germandbls (U+00DF): X=141.0,Y=713.0 (should be at cap-height 714?)
 
 	* eth (U+00F0): X=317.5,Y=714.5 (should be at cap-height 714?)
-
-	* thorn (U+00FE): X=131.0,Y=-216.0 (should be at descender -217?)
-
-	* thorn (U+00FE): X=33.0,Y=-216.0 (should be at descender -217?)
 
 	* ccaron (U+010D): X=460.0,Y=713.0 (should be at cap-height 714?)
 
@@ -859,10 +787,6 @@ plusminus
 
 	* lambda (U+03BB): X=195.0,Y=715.0 (should be at cap-height 714?)
 
-	* rho (U+03C1): X=131.0,Y=-216.0 (should be at descender -217?)
-
-	* rho (U+03C1): X=33.0,Y=-216.0 (should be at descender -217?)
-
 	* uni03C2 (U+03C2): X=188.5,Y=0.5 (should be at baseline 0?)
 
 	* tau (U+03C4): X=396.0,Y=-2.0 (should be at baseline 0?)
@@ -877,10 +801,6 @@ plusminus
 
 	* uni043B (U+043B): X=7.0,Y=2.0 (should be at baseline 0?)
 
-	* uni0440 (U+0440): X=131.0,Y=-216.0 (should be at descender -217?)
-
-	* uni0440 (U+0440): X=33.0,Y=-216.0 (should be at descender -217?)
-
 	* yacy (U+044F): X=125.0,Y=1.0 (should be at baseline 0?)
 
 	* yacy (U+044F): X=17.0,Y=1.0 (should be at baseline 0?)
@@ -888,10 +808,6 @@ plusminus
 	* uni0459 (U+0459): X=32.0,Y=0.5 (should be at baseline 0?)
 
 	* uni0459 (U+0459): X=7.0,Y=2.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=131.0,Y=-216.0 (should be at descender -217?)
-
-	* uni048F (U+048F): X=33.0,Y=-216.0 (should be at descender -217?)
 
 	* uni04A7 (U+04A7): X=573.0,Y=1.0 (should be at baseline 0?)
 
@@ -1011,6 +927,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<412.0,-30.0>--<389.0,4.0>> -> L<<389.0,4.0>--<259.0,185.0>>
 
+	* uni051B (U+051B): L<<538.0,-216.0>--<538.0,-10.0>> -> L<<538.0,-10.0>--<543.0,80.0>>
+
 	* uni1E0D (U+1E0D): L<<543.0,440.0>--<538.0,530.0>> -> L<<538.0,530.0>--<538.0,736.0>>
 
 	* uniA78B (U+A78B): L<<123.0,731.0>--<123.0,409.0>> -> L<<123.0,409.0>--<118.0,196.0>>
@@ -1069,6 +987,12 @@ plusminus
 
 	* uni0451 (U+0451): L<<131.0,303.0>--<529.0,304.0>>
 
+	* uni046A (U+046A): L<<343.0,0.0>--<344.0,323.0>>
+
+	* uni046A (U+046A): L<<447.0,323.0>--<446.0,0.0>>
+
+	* uni046B (U+046B): L<<252.0,0.0>--<253.0,227.0>>
+
 	* uni0496 (U+0496): L<<431.0,0.0>--<430.0,322.0>>
 
 	* uni04C1 (U+04C1): L<<431.0,0.0>--<430.0,322.0>>
@@ -1100,14 +1024,7 @@ plusminus
 	* uni20BD (U+20BD): L<<235.0,197.0>--<406.0,198.0>> 
 
 	* uni25B5 (U+25B5): L<<546.0,112.0>--<20.0,113.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtended-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -1147,8 +1064,8 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Bold | Non Bureau Extended |
-| Subfamily Name | Regular | Bold |
+| Family Name | Non Bureau Extended Thin | Non Bureau Extended |
+| Subfamily Name | Bold | Bold |
 | Full Name | Non Bureau Extended Bold | Non Bureau Extended Bold |
 | Poscript Name | NonBureauExtended-Bold | NonBureauExtended-Bold |
 | Typographic Family Name | Non Bureau Extended | N/A |
@@ -1156,15 +1073,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -1217,43 +1131,15 @@ But instead we have got:
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
 The dot of soft dotted characters should disappear in other cases, for example: i̦̇ i̦̊ i̦̋ i̦̒ i̦̓ j̦̀ j̦́ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ j̦̒ j̦̓ į̆ į̇ į̈ į̊ [code: soft-dotted]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** head macStyle BOLD bit should be set. [code: bad-BOLD]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be unset. [code: bad-REGULAR]
-* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be set. [code: bad-BOLD]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Bold' does not begin with the font family name 'Non Bureau Extended Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -1270,7 +1156,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Bold' / SUBFAMILY_NAME = 'Regular'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Thin' / SUBFAMILY_NAME = 'Bold'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -1373,7 +1259,201 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* Q (U+0051): X=540.0,Y=-2.0 (should be at baseline 0?)
+
+	* b (U+0062): X=272.0,Y=519.0 (should be at x-height 520?)
+
+	* d (U+0064): X=430.0,Y=519.0 (should be at x-height 520?)
+
+	* f (U+0066): X=100.0,Y=518.0 (should be at x-height 520?)
+
+	* p (U+0070): X=272.0,Y=0.5 (should be at baseline 0?)
+
+	* q (U+0071): X=430.0,Y=0.5 (should be at baseline 0?)
+
+	* r (U+0072): X=451.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=91.0,Y=518.0 (should be at x-height 520?)
+
+	* bar (U+007C): X=23.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=190.0,Y=715.0 (should be at cap-height 714?)
+
+	* sterling (U+00A3): X=349.0,Y=713.0 (should be at cap-height 714?)
+
+	* ordfeminine (U+00AA): X=164.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni00B5 (U+00B5): X=242.5,Y=-1.5 (should be at baseline 0?)
+
+	* ordmasculine (U+00BA): X=187.0,Y=713.0 (should be at cap-height 714?)
+
+	* ordmasculine (U+00BA): X=187.0,Y=713.0 (should be at cap-height 714?)
+
+	* thorn (U+00FE): X=272.0,Y=0.5 (should be at baseline 0?)
+
+	* ccaron (U+010D): X=513.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=180.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=517.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=184.0,Y=713.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=307.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=447.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=481.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=148.0,Y=713.0 (should be at cap-height 714?)
+
+	* Eng (U+014A): X=763.0,Y=-1.0 (should be at baseline 0?)
+
+	* rcaron (U+0159): X=397.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=64.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=479.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=146.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=494.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=161.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=517.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=184.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=540.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=207.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni023C (U+023C): X=230.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0263 (U+0263): X=25.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0263 (U+0263): X=589.0,Y=-2.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=351.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=351.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=269.0,Y=-0.5 (should be at baseline 0?)
+
+	* beta (U+03B2): X=197.0,Y=-1.0 (should be at baseline 0?)
+
+	* delta (U+03B4): X=281.0,Y=712.5 (should be at cap-height 714?)
+
+	* zeta (U+03B6): X=159.5,Y=-1.5 (should be at baseline 0?)
+
+	* uni03BC (U+03BC): X=525.5,Y=1.5 (should be at baseline 0?)
+
+	* uni03BC (U+03BC): X=422.5,Y=1.5 (should be at baseline 0?)
+
+	* uni03BC (U+03BC): X=252.5,Y=0.5 (should be at baseline 0?)
+
+	* rho (U+03C1): X=265.5,Y=1.5 (should be at baseline 0?)
+
+	* uni0409 (U+0409): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni041B (U+041B): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0440 (U+0440): X=272.0,Y=0.5 (should be at baseline 0?)
+
+	* yacy (U+044F): X=205.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=12.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni048F (U+048F): X=484.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni048F (U+048F): X=272.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C3 (U+04C3): X=498.0,Y=1.5 (should be at baseline 0?)
+
+	* uni04C4 (U+04C4): X=349.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C5 (U+04C5): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0512 (U+0512): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni051A (U+051A): X=540.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni051B (U+051B): X=430.0,Y=0.5 (should be at baseline 0?)
+
+	* uni1E14 (U+1E14): X=223.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E14 (U+1E14): X=380.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E16 (U+1E16): X=341.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E16 (U+1E16): X=497.0,Y=935.0 (should be at ascender 936?)
+
+	* uni2016 (U+2016): X=23.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=190.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=340.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=507.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2116 (U+2116): X=1360.0,Y=1.0 (should be at baseline 0?)
+
+	* emptyset (U+2205): X=114.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=955.0,Y=2.0 (should be at baseline 0?)
+
+	* triagup (U+25B2): X=402.0,Y=715.0 (should be at cap-height 714?)
+
+	* triagup (U+25B2): X=404.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B3 (U+25B3): X=402.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B3 (U+25B3): X=404.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B6 (U+25B6): X=23.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25B7 (U+25B7): X=23.0,Y=1.0 (should be at baseline 0?)
+
+	* triagdn (U+25BC): X=20.0,Y=715.0 (should be at cap-height 714?)
+
+	* triagdn (U+25BC): X=787.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25BD (U+25BD): X=787.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25BD (U+25BD): X=20.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25C0 (U+25C0): X=683.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25C1 (U+25C1): X=683.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=553.5,Y=1.0 (should be at baseline 0?) 
+
+	* uni25CC (U+25CC): X=336.5,Y=2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -1457,6 +1537,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<391.0,-7.0>--<380.0,9.0>> -> L<<380.0,9.0>--<294.0,129.0>>
 
+	* uni051B (U+051B): L<<505.0,-216.0>--<505.0,-24.0>> -> L<<505.0,-24.0>--<510.0,37.0>>
+
 	* uni0526 (U+0526): L<<838.0,148.0>--<847.0,24.0>> -> L<<847.0,24.0>--<847.0,-100.0>>
 
 	* uni1E0D (U+1E0D): L<<510.0,483.0>--<505.0,544.0>> -> L<<505.0,544.0>--<505.0,736.0>>
@@ -1535,6 +1617,12 @@ plusminus
 
 	* uni0451 (U+0451): L<<207.0,311.0>--<492.0,312.0>>
 
+	* uni046A (U+046A): L<<383.0,0.0>--<384.0,253.0>>
+
+	* uni046A (U+046A): L<<567.0,253.0>--<566.0,0.0>>
+
+	* uni046B (U+046B): L<<275.0,0.0>--<276.0,183.0>>
+
 	* uni0496 (U+0496): L<<492.0,0.0>--<491.0,305.0>>
 
 	* uni04BC (U+04BC): L<<402.0,438.0>--<801.0,439.0>>
@@ -1576,14 +1664,7 @@ plusminus
 	* uni2116 (U+2116): L<<872.0,114.0>--<1360.0,115.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -1632,15 +1713,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -1711,29 +1789,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -1848,7 +1903,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -1936,6 +1991,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<399.0,-37.0>--<374.0,2.0>> -> L<<374.0,2.0>--<243.0,203.0>>
 
+	* uni051B (U+051B): L<<382.0,-216.0>--<397.0,-5.0>> -> L<<397.0,-5.0>--<407.0,81.0>>
+
 	* uni1E0D (U+1E0D): L<<433.0,439.0>--<433.0,525.0>> -> L<<433.0,525.0>--<448.0,736.0>>
 
 	* uniA78B (U+A78B): L<<140.0,731.0>--<117.0,409.0>> -> L<<117.0,409.0>--<97.0,196.0>>
@@ -1947,14 +2004,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<52.0,409.0>--<55.0,520.0>> -> L<<55.0,520.0>--<70.0,730.0>> 
 
 	* zeta (U+03B6): L<<411.0,562.0>--<409.0,527.0>> -> L<<409.0,527.0>--<408.0,500.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -1990,15 +2040,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -2056,29 +2103,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -2198,7 +2222,185 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* a (U+0061): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* f (U+0066): X=133.0,Y=518.0 (should be at x-height 520?)
+
+	* r (U+0072): X=359.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=133.0,Y=518.0 (should be at x-height 520?)
+
+	* bar (U+007C): X=40.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=90.0,Y=715.0 (should be at cap-height 714?)
+
+	* onehalf (U+00BD): X=334.0,Y=1.0 (should be at baseline 0?)
+
+	* onehalf (U+00BD): X=568.0,Y=1.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=518.0,Y=716.0 (should be at cap-height 714?)
+
+	* agrave (U+00E0): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* aacute (U+00E1): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* acircumflex (U+00E2): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* atilde (U+00E3): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* adieresis (U+00E4): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* aring (U+00E5): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* ae (U+00E6): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* amacron (U+0101): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* abreve (U+0103): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* aogonek (U+0105): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* ccaron (U+010D): X=424.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=208.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=423.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=207.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=317.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=333.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=197.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=261.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=418.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=202.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=301.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=85.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=384.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=168.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni01CE (U+01CE): X=384.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=168.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=430.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=214.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=433.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=433.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=217.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=217.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=262.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=388.0,Y=716.0 (should be at cap-height 714?)
+
+	* aeacute (U+01FD): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* Oslashacute (U+01FE): X=518.0,Y=716.0 (should be at cap-height 714?)
+
+	* uni023B (U+023B): X=528.0,Y=712.0 (should be at cap-height 714?)
+
+	* uni0254 (U+0254): X=103.5,Y=-0.5 (should be at baseline 0?)
+
+	* uni0269 (U+0269): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresistonos (U+0390): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotatonos (U+03AF): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=293.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=293.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=89.0,Y=-1.0 (should be at baseline 0?)
+
+	* delta (U+03B4): X=293.5,Y=714.5 (should be at cap-height 714?)
+
+	* iota (U+03B9): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresis (U+03CA): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0402 (U+0402): X=710.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0430 (U+0430): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=30.0,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=10.0,Y=2.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=72.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=20.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=30.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=10.0,Y=2.0 (should be at baseline 0?)
+
+	* Gemiddlehookcy (U+0494): X=496.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni04A6 (U+04A6): X=1070.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=529.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=481.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=30.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=10.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04D1 (U+04D1): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni04D3 (U+04D3): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni04D5 (U+04D5): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=30.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=10.0,Y=2.0 (should be at baseline 0?)
+
+	* uni1EA1 (U+1EA1): X=313.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni2016 (U+2016): X=40.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=90.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=240.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=290.0,Y=715.0 (should be at cap-height 714?)
+
+	* emptyset (U+2205): X=81.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=838.0,Y=2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=526.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=304.0,Y=-1.5 (should be at baseline 0?) 
+
+	* uni2C65 (U+2C65): X=313.5,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -2266,6 +2468,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<426.0,-46.0>--<395.0,0.0>> -> L<<395.0,0.0>--<235.0,222.0>>
 
+	* uni051B (U+051B): L<<560.0,-216.0>--<560.0,0.0>> -> L<<560.0,0.0>--<565.0,108.0>>
+
 	* uni1E0D (U+1E0D): L<<565.0,412.0>--<560.0,520.0>> -> L<<560.0,520.0>--<560.0,736.0>>
 
 	* uniA78B (U+A78B): L<<45.0,196.0>--<40.0,409.0>> -> L<<40.0,409.0>--<40.0,731.0>>
@@ -2292,17 +2496,16 @@ plusminus
 
 	* beta (U+03B2): L<<89.0,-1.0>--<88.0,-217.0>>
 
-	* estimated (U+212E): L<<616.0,347.0>--<615.0,499.0>> 
+	* estimated (U+212E): L<<616.0,347.0>--<615.0,499.0>>
+
+	* uni046A (U+046A): L<<316.0,0.0>--<317.0,370.0>>
+
+	* uni046A (U+046A): L<<367.0,370.0>--<366.0,0.0>>
+
+	* uni046B (U+046B): L<<237.0,0.0>--<238.0,256.0>> 
 
 	* uni25B5 (U+25B5): L<<502.0,133.0>--<20.0,134.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[27] NonBureauExtended-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauExtended-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -2338,15 +2541,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -2404,29 +2604,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -2550,21 +2727,13 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* f (U+0066): X=113.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* p (U+0070): X=30.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=650.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=527.0,Y=-216.0 (should be at descender -217?)
 
 	* r (U+0072): X=414.0,Y=521.0 (should be at x-height 520?)
 
@@ -2578,17 +2747,9 @@ plusminus
 
 	* uni00B5 (U+00B5): X=616.0,Y=1.0 (should be at baseline 0?)
 
-	* paragraph (U+00B6): X=617.0,Y=-216.0 (should be at descender -217?)
-
-	* paragraph (U+00B6): X=497.0,Y=-216.0 (should be at descender -217?)
-
 	* onehalf (U+00BD): X=354.0,Y=1.0 (should be at baseline 0?)
 
 	* onehalf (U+00BD): X=597.0,Y=1.0 (should be at baseline 0?)
-
-	* thorn (U+00FE): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* thorn (U+00FE): X=30.0,Y=-216.0 (should be at descender -217?)
 
 	* ccaron (U+010D): X=478.0,Y=713.0 (should be at cap-height 714?)
 
@@ -2664,10 +2825,6 @@ plusminus
 
 	* lambda (U+03BB): X=541.0,Y=-0.5 (should be at baseline 0?)
 
-	* rho (U+03C1): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* rho (U+03C1): X=30.0,Y=-216.0 (should be at descender -217?)
-
 	* uni03C2 (U+03C2): X=343.5,Y=-1.0 (should be at baseline 0?)
 
 	* tau (U+03C4): X=408.0,Y=-1.0 (should be at baseline 0?)
@@ -2680,10 +2837,6 @@ plusminus
 
 	* uni043B (U+043B): X=5.0,Y=2.0 (should be at baseline 0?)
 
-	* uni0440 (U+0440): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* uni0440 (U+0440): X=30.0,Y=-216.0 (should be at descender -217?)
-
 	* yacy (U+044F): X=152.0,Y=1.0 (should be at baseline 0?)
 
 	* yacy (U+044F): X=15.0,Y=1.0 (should be at baseline 0?)
@@ -2691,10 +2844,6 @@ plusminus
 	* uni0459 (U+0459): X=33.0,Y=0.5 (should be at baseline 0?)
 
 	* uni0459 (U+0459): X=5.0,Y=2.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* uni048F (U+048F): X=30.0,Y=-216.0 (should be at descender -217?)
 
 	* uni04A7 (U+04A7): X=595.0,Y=1.0 (should be at baseline 0?)
 
@@ -2806,6 +2955,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<405.0,-22.0>--<386.0,6.0>> -> L<<386.0,6.0>--<271.0,166.0>>
 
+	* uni051B (U+051B): L<<527.0,-216.0>--<527.0,-14.0>> -> L<<527.0,-14.0>--<532.0,66.0>>
+
 	* uni1E0D (U+1E0D): L<<532.0,455.0>--<527.0,535.0>> -> L<<527.0,535.0>--<527.0,736.0>>
 
 	* uniA78B (U+A78B): L<<140.0,731.0>--<140.0,409.0>> -> L<<140.0,409.0>--<135.0,196.0>>
@@ -2878,6 +3029,12 @@ plusminus
 
 	* uni0451 (U+0451): L<<157.0,306.0>--<517.0,307.0>>
 
+	* uni046A (U+046A): L<<356.0,0.0>--<357.0,300.0>>
+
+	* uni046A (U+046A): L<<487.0,300.0>--<486.0,0.0>>
+
+	* uni046B (U+046B): L<<260.0,0.0>--<261.0,212.0>>
+
 	* uni04CD (U+04CD): L<<161.0,468.0>--<160.0,307.0>>
 
 	* uni04CD (U+04CD): L<<744.0,162.0>--<743.0,468.0>>
@@ -2905,14 +3062,7 @@ plusminus
 	* uni2116 (U+2116): L<<1312.0,1.0>--<825.0,0.0>> 
 
 	* uni2116 (U+2116): L<<825.0,85.0>--<1312.0,86.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -2952,7 +3102,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Italic Bold | Non Bureau Italic Black |
+| Family Name | Non Bureau Italic Thin | Non Bureau Italic Black |
 | Subfamily Name | Bold Italic | Regular |
 | Full Name | Non Bureau Italic Black | Non Bureau Italic Black |
 | Poscript Name | NonBureauItalic-Black | NonBureauItalic-Black |
@@ -2961,15 +3111,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3040,35 +3187,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Italic Black' does not begin with the font family name 'Non Bureau Italic Bold' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Italic Black' does not begin with the font family name 'Non Bureau Italic Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -3085,7 +3209,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Italic Bold' / SUBFAMILY_NAME = 'Bold Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Italic Thin' / SUBFAMILY_NAME = 'Bold Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -3183,7 +3307,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -3264,14 +3388,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<35.0,409.0>--<38.0,520.0>> -> L<<38.0,520.0>--<53.0,730.0>> 
 
 	* zeta (U+03B6): L<<496.0,564.0>--<487.0,438.0>> -> L<<487.0,438.0>--<487.0,401.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -3320,15 +3437,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3399,29 +3513,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -3536,7 +3627,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -3610,6 +3701,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<380.0,-13.0>--<366.0,7.0>> -> L<<366.0,7.0>--<275.0,147.0>>
 
+	* uni051B (U+051B): L<<367.0,-216.0>--<380.0,-19.0>> -> L<<380.0,-19.0>--<390.0,46.0>>
+
 	* uni1E0D (U+1E0D): L<<420.0,474.0>--<419.0,539.0>> -> L<<419.0,539.0>--<433.0,736.0>>
 
 	* uniA78B (U+A78B): L<<190.0,731.0>--<167.0,409.0>> -> L<<167.0,409.0>--<147.0,196.0>>
@@ -3621,14 +3714,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> 
 
 	* zeta (U+03B6): L<<462.0,563.0>--<456.0,474.0>> -> L<<456.0,474.0>--<455.0,441.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[26] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -3664,15 +3750,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3730,29 +3813,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -3865,21 +3925,13 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* f (U+0066): X=113.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* p (U+0070): X=30.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=528.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=405.0,Y=-216.0 (should be at descender -217?)
 
 	* r (U+0072): X=374.0,Y=521.0 (should be at x-height 520?)
 
@@ -3893,17 +3945,9 @@ logicalnot
 
 	* uni00B5 (U+00B5): X=546.0,Y=1.0 (should be at baseline 0?)
 
-	* paragraph (U+00B6): X=557.0,Y=-216.0 (should be at descender -217?)
-
-	* paragraph (U+00B6): X=437.0,Y=-216.0 (should be at descender -217?)
-
 	* onehalf (U+00BD): X=364.0,Y=1.0 (should be at baseline 0?)
 
 	* onehalf (U+00BD): X=572.0,Y=1.0 (should be at baseline 0?)
-
-	* thorn (U+00FE): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* thorn (U+00FE): X=30.0,Y=-216.0 (should be at descender -217?)
 
 	* ccaron (U+010D): X=412.0,Y=713.0 (should be at cap-height 714?)
 
@@ -3979,10 +4023,6 @@ logicalnot
 
 	* lambda (U+03BB): X=469.0,Y=-1.5 (should be at baseline 0?)
 
-	* rho (U+03C1): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* rho (U+03C1): X=30.0,Y=-216.0 (should be at descender -217?)
-
 	* uni03C2 (U+03C2): X=343.5,Y=-1.0 (should be at baseline 0?)
 
 	* uni0402 (U+0402): X=744.0,Y=1.5 (should be at baseline 0?)
@@ -3995,10 +4035,6 @@ logicalnot
 
 	* uni043B (U+043B): X=5.0,Y=2.0 (should be at baseline 0?)
 
-	* uni0440 (U+0440): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* uni0440 (U+0440): X=30.0,Y=-216.0 (should be at descender -217?)
-
 	* yacy (U+044F): X=152.0,Y=1.0 (should be at baseline 0?)
 
 	* yacy (U+044F): X=15.0,Y=1.0 (should be at baseline 0?)
@@ -4008,10 +4044,6 @@ logicalnot
 	* uni0459 (U+0459): X=5.0,Y=2.0 (should be at baseline 0?)
 
 	* uni048F (U+048F): X=381.0,Y=2.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=153.0,Y=-216.0 (should be at descender -217?)
-
-	* uni048F (U+048F): X=30.0,Y=-216.0 (should be at descender -217?)
 
 	* Gemiddlehookcy (U+0494): X=549.0,Y=1.5 (should be at baseline 0?)
 
@@ -4139,6 +4171,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<405.0,-22.0>--<386.0,6.0>> -> L<<386.0,6.0>--<271.0,166.0>>
 
+	* uni051B (U+051B): L<<405.0,-216.0>--<405.0,-14.0>> -> L<<405.0,-14.0>--<410.0,58.0>>
+
 	* uni1E0D (U+1E0D): L<<410.0,462.0>--<405.0,535.0>> -> L<<405.0,535.0>--<405.0,736.0>>
 
 	* uniA78B (U+A78B): L<<140.0,731.0>--<140.0,409.0>> -> L<<140.0,409.0>--<135.0,196.0>>
@@ -4185,6 +4219,12 @@ logicalnot
 
 	* sterling (U+00A3): L<<269.0,420.0>--<415.0,421.0>>
 
+	* uni046A (U+046A): L<<356.0,0.0>--<357.0,300.0>>
+
+	* uni046A (U+046A): L<<487.0,300.0>--<486.0,0.0>>
+
+	* uni046B (U+046B): L<<260.0,0.0>--<261.0,212.0>>
+
 	* uni04D8 (U+04D8): L<<551.0,287.0>--<161.0,286.0>>
 
 	* uni04DA (U+04DA): L<<551.0,287.0>--<161.0,286.0>>
@@ -4196,14 +4236,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,315.0>--<723.0,316.0>> 
 
 	* uni20B4 (U+20B4): L<<51.0,455.0>--<468.0,456.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[30] NonBureauExtendedItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[27] NonBureauExtendedItalic-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -4243,7 +4276,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Black | Non Bureau Extended Italic Black |
+| Family Name | Non Bureau Extended Italic Thin | Non Bureau Extended Italic Black |
 | Subfamily Name | Bold Italic | Regular |
 | Full Name | Non Bureau Extended Italic Black | Non Bureau Extended Italic Black |
 | Poscript Name | NonBureauExtendedItalic-Black | NonBureauExtendedItalic-Black |
@@ -4252,15 +4285,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -4331,35 +4361,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Black' does not begin with the font family name 'Non Bureau Extended Italic Extended Black' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Black' does not begin with the font family name 'Non Bureau Extended Italic Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -4376,7 +4383,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Black' / SUBFAMILY_NAME = 'Bold Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Thin' / SUBFAMILY_NAME = 'Bold Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -4470,7 +4477,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4551,14 +4558,7 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
 	* dcroat (U+0111): L<<468.0,0.0>--<491.0,37.0>>/L<<491.0,37.0>--<489.0,35.0>> = 13.134022306396327 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[24] NonBureauItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -4591,18 +4591,28 @@ which does not match the expected format, similar to:
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
 "Copyright © 2023 by Non Foundry. All rights reserved." [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+
+
+* 🔥 **FAIL** Font names are incorrect:
+
+| nameID | current | expected |
+| :--- | :--- | :--- |
+| Family Name | Non Bureau Italic Regular | Non Bureau Italic |
+| Subfamily Name | Italic | Regular |
+| Full Name | Non Bureau Italic Regular | Non Bureau Italic Regular |
+| Poscript Name | NonBureauItalic-Regular | NonBureauItalic-Regular |
+| Typographic Family Name | Non Bureau Italic | N/A |
+| Typographic Subfamily Name | Regular | N/A | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -4655,6 +4665,15 @@ But instead we have got:
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
 The dot of soft dotted characters should disappear in other cases, for example: i̦̇ i̦̊ i̦̋ i̦̒ i̦̓ j̦̀ j̦́ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ j̦̒ j̦̓ į̆ į̇ į̈ į̊ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
+
+
+* 🔥 **FAIL** head macStyle ITALIC bit should be unset. [code: bad-ITALIC]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be set. [code: bad-REGULAR]
+* 🔥 **FAIL** OS/2 fsSelection ITALIC bit should be unset. [code: bad-ITALIC]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking post.italicAngle value. (derived from com.google.fonts/check/italic_angle) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/post.html#com.google.fonts/check/italic_angle">com.google.fonts/check/italic_angle</a>)</summary><div>
 
 
@@ -4664,29 +4683,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -4699,6 +4695,13 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	- f + i 
 
 	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
+
+
+* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
+ FONT_FAMILY_NAME = 'Non Bureau Italic Regular' / SUBFAMILY_NAME = 'Italic'
+
+Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
@@ -4794,7 +4797,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4874,6 +4877,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<393.0,-29.0>--<372.0,4.0>> -> L<<372.0,4.0>--<253.0,185.0>>
 
+	* uni051B (U+051B): L<<377.0,-216.0>--<391.0,-10.0>> -> L<<391.0,-10.0>--<401.0,70.0>>
+
 	* uni0527 (U+0527): L<<168.0,736.0>--<153.0,530.0>> -> L<<153.0,530.0>--<138.0,444.0>>
 
 	* uni1E0D (U+1E0D): L<<429.0,450.0>--<429.0,530.0>> -> L<<429.0,530.0>--<443.0,736.0>>
@@ -4893,14 +4898,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> 
 
 	* zeta (U+03B6): L<<428.0,563.0>--<424.0,509.0>> -> L<<424.0,509.0>--<424.0,480.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[22] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -4936,15 +4934,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -5002,29 +4997,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -5128,21 +5100,13 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* f (U+0066): X=133.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=88.0,Y=-216.0 (should be at descender -217?)
-
-	* p (U+0070): X=40.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=468.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=420.0,Y=-216.0 (should be at descender -217?)
 
 	* r (U+0072): X=319.0,Y=521.0 (should be at x-height 520?)
 
@@ -5152,19 +5116,11 @@ The following glyphs do not have the recommended number of contours:
 
 	* bar (U+007C): X=90.0,Y=715.0 (should be at cap-height 714?)
 
-	* paragraph (U+00B6): X=427.0,Y=-216.0 (should be at descender -217?)
-
-	* paragraph (U+00B6): X=377.0,Y=-216.0 (should be at descender -217?)
-
 	* onehalf (U+00BD): X=344.0,Y=1.0 (should be at baseline 0?)
 
 	* onehalf (U+00BD): X=538.0,Y=1.0 (should be at baseline 0?)
 
 	* Oslash (U+00D8): X=247.0,Y=2.0 (should be at baseline 0?)
-
-	* thorn (U+00FE): X=88.0,Y=-216.0 (should be at descender -217?)
-
-	* thorn (U+00FE): X=40.0,Y=-216.0 (should be at descender -217?)
 
 	* ccaron (U+010D): X=354.0,Y=713.0 (should be at cap-height 714?)
 
@@ -5234,10 +5190,6 @@ The following glyphs do not have the recommended number of contours:
 
 	* iota (U+03B9): X=189.0,Y=-1.0 (should be at baseline 0?)
 
-	* rho (U+03C1): X=88.0,Y=-216.0 (should be at descender -217?)
-
-	* rho (U+03C1): X=40.0,Y=-216.0 (should be at descender -217?)
-
 	* tau (U+03C4): X=282.0,Y=-1.0 (should be at baseline 0?)
 
 	* iotadieresis (U+03CA): X=189.0,Y=-1.0 (should be at baseline 0?)
@@ -5246,10 +5198,6 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni043B (U+043B): X=10.0,Y=2.0 (should be at baseline 0?)
 
-	* uni0440 (U+0440): X=88.0,Y=-216.0 (should be at descender -217?)
-
-	* uni0440 (U+0440): X=40.0,Y=-216.0 (should be at descender -217?)
-
 	* yacy (U+044F): X=72.0,Y=1.0 (should be at baseline 0?)
 
 	* yacy (U+044F): X=20.0,Y=1.0 (should be at baseline 0?)
@@ -5257,10 +5205,6 @@ The following glyphs do not have the recommended number of contours:
 	* uni0459 (U+0459): X=30.0,Y=0.5 (should be at baseline 0?)
 
 	* uni0459 (U+0459): X=10.0,Y=2.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=88.0,Y=-216.0 (should be at descender -217?)
-
-	* uni048F (U+048F): X=40.0,Y=-216.0 (should be at descender -217?)
 
 	* uni04A7 (U+04A7): X=436.0,Y=1.0 (should be at baseline 0?)
 
@@ -5372,6 +5316,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<426.0,-46.0>--<395.0,0.0>> -> L<<395.0,0.0>--<235.0,222.0>>
 
+	* uni051B (U+051B): L<<420.0,-216.0>--<420.0,0.0>> -> L<<420.0,0.0>--<425.0,93.0>>
+
 	* uni1E0D (U+1E0D): L<<425.0,427.0>--<420.0,520.0>> -> L<<420.0,520.0>--<420.0,736.0>>
 
 	* uniA78B (U+A78B): L<<45.0,196.0>--<40.0,409.0>> -> L<<40.0,409.0>--<40.0,731.0>>
@@ -5398,17 +5344,16 @@ The following glyphs do not have the recommended number of contours:
 
 	* beta (U+03B2): L<<89.0,-1.0>--<88.0,-217.0>>
 
-	* estimated (U+212E): L<<536.0,347.0>--<535.0,509.0>> 
+	* estimated (U+212E): L<<536.0,347.0>--<535.0,509.0>>
 
-	* oe (U+0153): L<<884.0,255.0>--<495.0,254.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[28] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
+	* oe (U+0153): L<<884.0,255.0>--<495.0,254.0>>
 
+	* uni046A (U+046A): L<<316.0,0.0>--<317.0,370.0>>
 
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
+	* uni046A (U+046A): L<<367.0,370.0>--<366.0,0.0>> 
 
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+	* uni046B (U+046B): L<<237.0,0.0>--<238.0,256.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[25] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -5448,8 +5393,8 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Bold | Non Bureau |
-| Subfamily Name | Regular | Bold |
+| Family Name | Non Bureau Thin | Non Bureau |
+| Subfamily Name | Bold | Bold |
 | Full Name | Non Bureau Bold | Non Bureau Bold |
 | Poscript Name | NonBureau-Bold | NonBureau-Bold |
 | Typographic Family Name | Non Bureau | N/A |
@@ -5457,15 +5402,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -5518,43 +5460,15 @@ But instead we have got:
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
 The dot of soft dotted characters should disappear in other cases, for example: i̦̇ i̦̊ i̦̋ i̦̒ i̦̓ j̦̀ j̦́ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ j̦̒ j̦̓ į̆ į̇ į̈ į̊ [code: soft-dotted]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** head macStyle BOLD bit should be set. [code: bad-BOLD]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be unset. [code: bad-REGULAR]
-* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be set. [code: bad-BOLD]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Bold' does not begin with the font family name 'Non Bureau Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -5667,7 +5581,209 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* Q (U+0051): X=485.0,Y=1.0 (should be at baseline 0?)
+
+	* b (U+0062): X=242.0,Y=2.0 (should be at baseline 0?)
+
+	* b (U+0062): X=249.0,Y=519.5 (should be at x-height 520?)
+
+	* d (U+0064): X=343.0,Y=519.5 (should be at x-height 520?)
+
+	* d (U+0064): X=349.0,Y=2.0 (should be at baseline 0?)
+
+	* f (U+0066): X=100.0,Y=518.0 (should be at x-height 520?)
+
+	* p (U+0070): X=249.0,Y=0.5 (should be at baseline 0?)
+
+	* p (U+0070): X=242.0,Y=518.0 (should be at x-height 520?)
+
+	* q (U+0071): X=349.0,Y=518.0 (should be at x-height 520?)
+
+	* q (U+0071): X=343.0,Y=0.5 (should be at baseline 0?)
+
+	* r (U+0072): X=411.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=91.0,Y=518.0 (should be at x-height 520?)
+
+	* bar (U+007C): X=23.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=190.0,Y=715.0 (should be at cap-height 714?)
+
+	* ordfeminine (U+00AA): X=142.0,Y=713.0 (should be at cap-height 714?)
+
+	* ordmasculine (U+00BA): X=157.0,Y=713.0 (should be at cap-height 714?)
+
+	* ordmasculine (U+00BA): X=157.0,Y=713.0 (should be at cap-height 714?)
+
+	* germandbls (U+00DF): X=380.5,Y=714.5 (should be at cap-height 714?)
+
+	* thorn (U+00FE): X=249.0,Y=0.5 (should be at baseline 0?)
+
+	* ccaron (U+010D): X=450.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=117.0,Y=713.0 (should be at cap-height 714?)
+
+	* dcaron (U+010F): X=349.0,Y=2.0 (should be at baseline 0?)
+
+	* ecaron (U+011B): X=459.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=126.0,Y=713.0 (should be at cap-height 714?)
+
+	* ij (U+0133): X=332.0,Y=2.0 (should be at baseline 0?)
+
+	* lcaron (U+013E): X=307.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=447.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=461.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=128.0,Y=713.0 (should be at cap-height 714?)
+
+	* Eng (U+014A): X=507.0,Y=1.0 (should be at baseline 0?)
+
+	* rcaron (U+0159): X=394.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=61.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=433.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=100.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=440.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=107.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=460.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=127.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=477.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=144.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni023B (U+023B): X=471.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni0263 (U+0263): X=28.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0263 (U+0263): X=512.0,Y=-2.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=323.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=197.0,Y=-1.0 (should be at baseline 0?)
+
+	* delta (U+03B4): X=250.5,Y=713.5 (should be at cap-height 714?)
+
+	* uni03BC (U+03BC): X=236.5,Y=-1.5 (should be at baseline 0?)
+
+	* rho (U+03C1): X=249.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0409 (U+0409): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni041B (U+041B): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0440 (U+0440): X=249.0,Y=0.5 (should be at baseline 0?)
+
+	* yacy (U+044F): X=205.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=12.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni048F (U+048F): X=249.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04BE (U+04BE): X=660.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni04BF (U+04BF): X=572.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni04C3 (U+04C3): X=425.0,Y=1.5 (should be at baseline 0?)
+
+	* uni04C4 (U+04C4): X=349.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C5 (U+04C5): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0512 (U+0512): X=47.5,Y=1.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=35.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=2.0,Y=2.0 (should be at baseline 0?)
+
+	* uni051A (U+051A): X=485.0,Y=1.0 (should be at baseline 0?)
+
+	* uni051B (U+051B): X=343.0,Y=0.5 (should be at baseline 0?)
+
+	* uni1E0D (U+1E0D): X=349.0,Y=2.0 (should be at baseline 0?)
+
+	* dmacronbelow (U+1E0F): X=349.0,Y=2.0 (should be at baseline 0?)
+
+	* uni1E14 (U+1E14): X=128.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E14 (U+1E14): X=285.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E16 (U+1E16): X=248.0,Y=935.0 (should be at ascender 936?)
+
+	* uni1E16 (U+1E16): X=404.0,Y=935.0 (should be at ascender 936?)
+
+	* uni2016 (U+2016): X=23.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=190.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=340.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=507.0,Y=715.0 (should be at cap-height 714?)
+
+	* lira (U+20A4): X=332.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni20BF (U+20BF): X=403.0,Y=2.0 (should be at baseline 0?)
+
+	* emptyset (U+2205): X=76.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=855.0,Y=2.0 (should be at baseline 0?)
+
+	* triagup (U+25B2): X=402.0,Y=715.0 (should be at cap-height 714?)
+
+	* triagup (U+25B2): X=404.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B3 (U+25B3): X=402.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B3 (U+25B3): X=404.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25B6 (U+25B6): X=23.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25B7 (U+25B7): X=23.0,Y=1.0 (should be at baseline 0?)
+
+	* triagdn (U+25BC): X=20.0,Y=715.0 (should be at cap-height 714?)
+
+	* triagdn (U+25BC): X=787.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25BD (U+25BD): X=787.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25BD (U+25BD): X=20.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni25C0 (U+25C0): X=683.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25C1 (U+25C1): X=683.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=490.0,Y=2.0 (should be at baseline 0?) 
+
+	* uni25CC (U+25CC): X=307.0,Y=2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -5761,6 +5877,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<391.0,-7.0>--<380.0,9.0>> -> L<<380.0,9.0>--<294.0,129.0>>
 
+	* uni051B (U+051B): L<<395.0,-216.0>--<395.0,-24.0>> -> L<<395.0,-24.0>--<400.0,35.0>>
+
 	* uni0527 (U+0527): L<<197.0,736.0>--<197.0,544.0>> -> L<<197.0,544.0>--<190.0,469.0>>
 
 	* uni1E0D (U+1E0D): L<<400.0,485.0>--<395.0,544.0>> -> L<<395.0,544.0>--<395.0,736.0>>
@@ -5807,6 +5925,12 @@ logicalnot
 
 	* uni018F (U+018F): L<<104.0,399.0>--<519.0,401.0>>
 
+	* uni046A (U+046A): L<<383.0,0.0>--<384.0,253.0>>
+
+	* uni046A (U+046A): L<<567.0,253.0>--<566.0,0.0>>
+
+	* uni046B (U+046B): L<<275.0,0.0>--<276.0,183.0>>
+
 	* uni04BC (U+04BC): L<<397.0,438.0>--<713.0,439.0>>
 
 	* uni04BE (U+04BE): L<<397.0,438.0>--<713.0,439.0>>
@@ -5826,14 +5950,7 @@ logicalnot
 	* uni20BD (U+20BD): L<<330.0,198.0>--<507.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -5869,15 +5986,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -5935,29 +6049,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -6070,7 +6161,187 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* f (U+0066): X=126.0,Y=518.0 (should be at x-height 520?)
+
+	* r (U+0072): X=337.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=125.0,Y=518.0 (should be at x-height 520?)
+
+	* t (U+0074): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* bar (U+007C): X=37.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=110.0,Y=715.0 (should be at cap-height 714?)
+
+	* registered (U+00AE): X=276.0,Y=715.0 (should be at cap-height 714?)
+
+	* onehalf (U+00BD): X=351.0,Y=1.0 (should be at baseline 0?)
+
+	* onehalf (U+00BD): X=550.0,Y=1.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=440.0,Y=713.0 (should be at cap-height 714?)
+
+	* aring (U+00E5): X=239.0,Y=712.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=373.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=134.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=377.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=138.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=252.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=275.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=219.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=299.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=371.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=132.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=308.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=69.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=354.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=115.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0163 (U+0163): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* tcaron (U+0165): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* tbar (U+0167): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0186 (U+0186): X=110.5,Y=2.0 (should be at baseline 0?)
+
+	* florin (U+0192): X=10.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni01CE (U+01CE): X=358.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=119.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=388.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=149.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=383.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=383.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=144.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=144.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=203.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=324.0,Y=716.0 (should be at cap-height 714?)
+
+	* Oslashacute (U+01FE): X=440.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni021B (U+021B): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni023B (U+023B): X=427.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni023C (U+023C): X=181.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0254 (U+0254): X=89.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0269 (U+0269): X=211.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresistonos (U+0390): X=211.0,Y=-1.0 (should be at baseline 0?)
+
+	* alphatonos (U+03AC): X=576.0,Y=-2.0 (should be at baseline 0?)
+
+	* iotatonos (U+03AF): X=211.0,Y=-1.0 (should be at baseline 0?)
+
+	* alpha (U+03B1): X=576.0,Y=-2.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=283.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=111.0,Y=-1.0 (should be at baseline 0?)
+
+	* gamma (U+03B3): X=294.0,Y=1.0 (should be at baseline 0?)
+
+	* gamma (U+03B3): X=221.0,Y=1.0 (should be at baseline 0?)
+
+	* iota (U+03B9): X=211.0,Y=-1.0 (should be at baseline 0?)
+
+	* tau (U+03C4): X=299.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresis (U+03CA): X=211.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=31.0,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=8.0,Y=2.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=99.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=18.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=31.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=8.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=462.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=390.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=31.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=8.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04FC (U+04FC): X=108.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04FC (U+04FC): X=21.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04FD (U+04FD): X=392.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=31.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=8.0,Y=2.0 (should be at baseline 0?)
+
+	* uni1E6D (U+1E6D): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* tmacronbelow (U+1E6F): X=344.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni2016 (U+2016): X=37.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=110.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=260.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=333.0,Y=715.0 (should be at cap-height 714?)
+
+	* colonmonetary (U+20A1): X=250.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni20BF (U+20BF): X=348.0,Y=713.0 (should be at cap-height 714?)
+
+	* soundreccopyright (U+2117): X=276.0,Y=715.0 (should be at cap-height 714?)
+
+	* emptyset (U+2205): X=62.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=761.0,Y=2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=498.5,Y=0.5 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=257.5,Y=-0.5 (should be at baseline 0?)
+
+	* uni2C66 (U+2C66): X=344.0,Y=-2.0 (should be at baseline 0?) 
+
+	* f_t (U+FB05): X=624.0,Y=-2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -6172,6 +6443,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<419.0,-38.0>--<392.0,2.0>> -> L<<392.0,2.0>--<247.0,203.0>>
 
+	* uni051B (U+051B): L<<415.0,-216.0>--<415.0,-5.0>> -> L<<415.0,-5.0>--<420.0,81.0>>
+
 	* uni1E0D (U+1E0D): L<<420.0,439.0>--<415.0,525.0>> -> L<<415.0,525.0>--<415.0,736.0>>
 
 	* uniA78B (U+A78B): L<<107.0,731.0>--<107.0,409.0>> -> L<<107.0,409.0>--<102.0,196.0>>
@@ -6210,19 +6483,18 @@ logicalnot
 
 	* psi (U+03C8): L<<292.0,520.0>--<291.0,48.0>>
 
+	* uni046A (U+046A): L<<329.0,0.0>--<330.0,347.0>>
+
+	* uni046A (U+046A): L<<407.0,347.0>--<406.0,0.0>>
+
+	* uni046B (U+046B): L<<245.0,0.0>--<246.0,241.0>>
+
 	* uni04E9 (U+04E9): L<<105.0,302.0>--<433.0,303.0>>
 
 	* uni04EB (U+04EB): L<<105.0,302.0>--<433.0,303.0>> 
 
 	* uni20B4 (U+20B4): L<<26.0,308.0>--<711.0,309.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtendedItalic-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -6262,7 +6534,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Light | Non Bureau Extended Italic Light |
+| Family Name | Non Bureau Extended Italic Light | Non Bureau Extended Italic Light |
 | Subfamily Name | Italic | Regular |
 | Full Name | Non Bureau Extended Italic Light | Non Bureau Extended Italic Light |
 | Poscript Name | NonBureauExtendedItalic-Light | NonBureauExtendedItalic-Light |
@@ -6271,15 +6543,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -6345,38 +6614,11 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
-</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
-
-
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Light' does not begin with the font family name 'Non Bureau Extended Italic Extended Light' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -6393,7 +6635,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Light' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Light' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -6487,7 +6729,207 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* N (U+004E): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* W (U+0057): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* f (U+0066): X=144.0,Y=518.0 (should be at x-height 520?)
+
+	* r (U+0072): X=395.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=143.0,Y=518.0 (should be at x-height 520?)
+
+	* bar (U+007C): X=69.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=142.0,Y=715.0 (should be at cap-height 714?)
+
+	* registered (U+00AE): X=337.0,Y=715.0 (should be at cap-height 714?)
+
+	* onehalf (U+00BD): X=300.0,Y=1.0 (should be at baseline 0?)
+
+	* onehalf (U+00BD): X=537.0,Y=1.0 (should be at baseline 0?)
+
+	* Ntilde (U+00D1): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* germandbls (U+00DF): X=167.5,Y=714.5 (should be at cap-height 714?)
+
+	* germandbls (U+00DF): X=392.5,Y=712.5 (should be at cap-height 714?)
+
+	* aring (U+00E5): X=316.0,Y=712.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=483.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=243.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=483.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=243.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=349.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=372.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=251.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=331.0,Y=716.0 (should be at cap-height 714?)
+
+	* Nacute (U+0143): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0145 (U+0145): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* Ncaron (U+0147): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=458.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=218.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=353.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=113.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=430.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=190.0,Y=713.0 (should be at cap-height 714?)
+
+	* Wcircumflex (U+0174): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0186 (U+0186): X=106.0,Y=2.0 (should be at baseline 0?)
+
+	* florin (U+0192): X=-8.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni01CE (U+01CE): X=438.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=198.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=478.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=238.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=480.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=480.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=240.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=240.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=299.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=420.0,Y=716.0 (should be at cap-height 714?)
+
+	* uni0241 (U+0241): X=299.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0241 (U+0241): X=223.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0241 (U+0241): X=299.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0254 (U+0254): X=83.5,Y=-2.0 (should be at baseline 0?)
+
+	* uni0269 (U+0269): X=193.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresistonos (U+0390): X=193.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0394 (U+0394): X=464.0,Y=713.0 (should be at cap-height 714?)
+
+	* Nu (U+039D): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* Psi (U+03A8): X=646.0,Y=715.0 (should be at cap-height 714?)
+
+	* Psi (U+03A8): X=59.0,Y=715.0 (should be at cap-height 714?)
+
+	* iotatonos (U+03AF): X=193.0,Y=-1.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=335.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=94.0,Y=-1.0 (should be at baseline 0?)
+
+	* delta (U+03B4): X=343.0,Y=715.0 (should be at cap-height 714?)
+
+	* iota (U+03B9): X=193.0,Y=-1.0 (should be at baseline 0?)
+
+	* nu (U+03BD): X=328.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresis (U+03CA): X=193.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni03D7 (U+03D7): X=590.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni03D7 (U+03D7): X=517.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0402 (U+0402): X=683.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=39.5,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=17.0,Y=2.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=82.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=0.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=43.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=17.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0475 (U+0475): X=333.0,Y=1.0 (should be at baseline 0?)
+
+	* Gemiddlehookcy (U+0494): X=474.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni04A6 (U+04A6): X=1044.5,Y=-1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=533.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=460.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=39.5,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=17.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04FD (U+04FD): X=375.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=39.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=17.0,Y=2.0 (should be at baseline 0?)
+
+	* uni051C (U+051C): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni1E44 (U+1E44): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni1E46 (U+1E46): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* Nmacronbelow (U+1E48): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* Wgrave (U+1E80): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* Wacute (U+1E82): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* Wdieresis (U+1E84): X=585.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=69.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=142.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=292.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=365.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni20A6 (U+20A6): X=255.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni20A9 (U+20A9): X=615.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni2116 (U+2116): X=145.0,Y=713.0 (should be at cap-height 714?)
+
+	* soundreccopyright (U+2117): X=337.0,Y=715.0 (should be at cap-height 714?)
+
+	* emptyset (U+2205): X=72.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=2.0,Y=2.0 (should be at baseline 0?) 
+
+	* uni2206 (U+2206): X=843.0,Y=2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -6571,6 +7013,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<399.0,-37.0>--<375.0,2.0>> -> L<<375.0,2.0>--<243.0,204.0>>
 
+	* uni051B (U+051B): L<<516.0,-216.0>--<531.0,-5.0>> -> L<<531.0,-5.0>--<542.0,94.0>>
+
 	* uni1E0D (U+1E0D): L<<565.0,424.0>--<568.0,525.0>> -> L<<568.0,525.0>--<582.0,736.0>>
 
 	* uniA78B (U+A78B): L<<140.0,731.0>--<117.0,409.0>> -> L<<117.0,409.0>--<97.0,196.0>>
@@ -6580,14 +7024,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<128.0,730.0>--<113.0,520.0>> -> L<<113.0,520.0>--<100.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<52.0,409.0>--<55.0,520.0>> -> L<<55.0,520.0>--<70.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauExtendedItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -6627,8 +7064,8 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Bold | Non Bureau Extended Italic |
-| Subfamily Name | Italic | Bold |
+| Family Name | Non Bureau Extended Italic Thin | Non Bureau Extended Italic |
+| Subfamily Name | Bold Italic | Bold |
 | Full Name | Non Bureau Extended Italic Bold | Non Bureau Extended Italic Bold |
 | Poscript Name | NonBureauExtendedItalic-Bold | NonBureauExtendedItalic-Bold |
 | Typographic Family Name | Non Bureau Extended Italic | N/A |
@@ -6636,15 +7073,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -6701,12 +7135,10 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** head macStyle ITALIC bit should be unset. [code: bad-ITALIC]
-* 🔥 **FAIL** head macStyle BOLD bit should be set. [code: bad-BOLD]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2 fsSelection ITALIC bit should be unset. [code: bad-ITALIC]
-* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be set. [code: bad-BOLD]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking post.italicAngle value. (derived from com.google.fonts/check/italic_angle) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/post.html#com.google.fonts/check/italic_angle">com.google.fonts/check/italic_angle</a>)</summary><div>
 
 
@@ -6714,35 +7146,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Bold' does not begin with the font family name 'Non Bureau Extended Italic Extended Bold' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Bold' does not begin with the font family name 'Non Bureau Extended Italic Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -6759,7 +7168,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Bold' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Thin' / SUBFAMILY_NAME = 'Bold Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -6853,7 +7262,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -6933,6 +7342,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<388.0,258.0>--<494.0,96.0>> -> L<<494.0,96.0>--<506.0,76.0>>
 
+	* uni051B (U+051B): L<<472.0,-216.0>--<485.0,-24.0>> -> L<<485.0,-24.0>--<494.0,37.0>>
+
 	* uni1E0D (U+1E0D): L<<526.0,474.0>--<526.0,544.0>> -> L<<526.0,544.0>--<539.0,736.0>>
 
 	* uni2206 (U+2206): L<<519.0,720.0>--<936.0,2.0>> -> L<<936.0,2.0>--<937.0,0.0>>
@@ -6944,14 +7355,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<188.0,730.0>--<173.0,520.0>> -> L<<173.0,520.0>--<160.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauExtendedItalic-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -6991,7 +7395,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended SemiBold | Non Bureau Extended Italic SemiBold |
+| Family Name | Non Bureau Extended Italic SemiBold | Non Bureau Extended Italic SemiBold |
 | Subfamily Name | Italic | Regular |
 | Full Name | Non Bureau Extended Italic SemiBold | Non Bureau Extended Italic SemiBold |
 | Poscript Name | NonBureauExtendedItalic-SemiBold | NonBureauExtendedItalic-SemiBold |
@@ -7000,15 +7404,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7074,38 +7475,11 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
-</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
-
-
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic SemiBold' does not begin with the font family name 'Non Bureau Extended Italic Extended SemiBold' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -7122,7 +7496,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended SemiBold' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic SemiBold' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -7216,7 +7590,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -7292,6 +7666,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<380.0,-13.0>--<368.0,7.0>> -> L<<368.0,7.0>--<275.0,148.0>>
 
+	* uni051B (U+051B): L<<483.0,-216.0>--<496.0,-19.0>> -> L<<496.0,-19.0>--<506.0,51.0>>
+
 	* uni1E0D (U+1E0D): L<<536.0,461.0>--<536.0,539.0>> -> L<<536.0,539.0>--<550.0,736.0>>
 
 	* uniA78B (U+A78B): L<<190.0,731.0>--<167.0,409.0>> -> L<<167.0,409.0>--<147.0,196.0>>
@@ -7301,14 +7677,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<173.0,730.0>--<158.0,520.0>> -> L<<158.0,520.0>--<145.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauExtendedItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -7348,7 +7717,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Medium | Non Bureau Extended Italic Medium |
+| Family Name | Non Bureau Extended Italic Medium | Non Bureau Extended Italic Medium |
 | Subfamily Name | Italic | Regular |
 | Full Name | Non Bureau Extended Italic Medium | Non Bureau Extended Italic Medium |
 | Poscript Name | NonBureauExtendedItalic-Medium | NonBureauExtendedItalic-Medium |
@@ -7357,15 +7726,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7431,38 +7797,11 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
-</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
-
-
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Medium' does not begin with the font family name 'Non Bureau Extended Italic Extended Medium' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -7479,7 +7818,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Medium' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Medium' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -7573,7 +7912,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -7659,6 +7998,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<387.0,-21.0>--<370.0,6.0>> -> L<<370.0,6.0>--<265.0,167.0>>
 
+	* uni051B (U+051B): L<<494.0,-216.0>--<508.0,-14.0>> -> L<<508.0,-14.0>--<518.0,66.0>>
+
 	* uni1E0D (U+1E0D): L<<546.0,449.0>--<547.0,535.0>> -> L<<547.0,535.0>--<561.0,736.0>>
 
 	* uniA78B (U+A78B): L<<173.0,731.0>--<150.0,409.0>> -> L<<150.0,409.0>--<130.0,196.0>>
@@ -7668,14 +8009,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<158.0,730.0>--<143.0,520.0>> -> L<<143.0,520.0>--<130.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[29] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -7715,7 +8049,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Light | Non Bureau Black |
+| Family Name | Non Bureau Thin | Non Bureau Black |
 | Subfamily Name | Bold | Regular |
 | Full Name | Non Bureau Black | Non Bureau Black |
 | Poscript Name | NonBureau-Black | NonBureau-Black |
@@ -7724,15 +8058,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7797,35 +8128,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
 
 
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Black' does not begin with the font family name 'Non Bureau Light' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Black' does not begin with the font family name 'Non Bureau Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -7938,7 +8246,7 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -8006,6 +8314,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<413.0,260.0>--<518.0,115.0>> -> L<<518.0,115.0>--<533.0,95.0>>
 
+	* uni051B (U+051B): L<<390.0,-216.0>--<390.0,-29.0>> -> L<<390.0,-29.0>--<395.0,23.0>>
+
 	* uni0527 (U+0527): L<<218.0,736.0>--<218.0,549.0>> -> L<<218.0,549.0>--<211.0,477.0>>
 
 	* uni1E0D (U+1E0D): L<<395.0,497.0>--<390.0,549.0>> -> L<<390.0,549.0>--<390.0,736.0>>
@@ -8050,6 +8360,14 @@ logicalnot
 
 	* sterling (U+00A3): L<<347.0,413.0>--<472.0,414.0>>
 
+	* uni046A (U+046A): L<<396.0,0.0>--<397.0,230.0>>
+
+	* uni046A (U+046A): L<<607.0,230.0>--<606.0,0.0>>
+
+	* uni046B (U+046B): L<<283.0,0.0>--<284.0,168.0>>
+
+	* uni046B (U+046B): L<<481.0,168.0>--<480.0,0.0>>
+
 	* uni04BC (U+04BC): L<<433.0,444.0>--<714.0,445.0>>
 
 	* uni04BE (U+04BE): L<<433.0,444.0>--<714.0,445.0>>
@@ -8069,14 +8387,7 @@ logicalnot
 	* uni20BD (U+20BD): L<<360.0,198.0>--<539.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<10.0,361.0>--<11.0,521.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauExtendedItalic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -8116,7 +8427,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Regular | Non Bureau Extended Italic |
+| Family Name | Non Bureau Extended Italic Regular | Non Bureau Extended Italic |
 | Subfamily Name | Italic | Regular |
 | Full Name | Non Bureau Extended Italic Regular | Non Bureau Extended Italic Regular |
 | Poscript Name | NonBureauExtendedItalic-Regular | NonBureauExtendedItalic-Regular |
@@ -8125,15 +8436,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8199,38 +8507,11 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
-</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
-
-
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Regular' does not begin with the font family name 'Non Bureau Extended Italic Extended Regular' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -8247,7 +8528,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Regular' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Regular' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -8341,7 +8622,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -8427,6 +8708,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<393.0,-29.0>--<372.0,4.0>> -> L<<372.0,4.0>--<254.0,185.0>>
 
+	* uni051B (U+051B): L<<505.0,-216.0>--<519.0,-10.0>> -> L<<519.0,-10.0>--<530.0,80.0>>
+
 	* uni1E0D (U+1E0D): L<<555.0,436.0>--<557.0,530.0>> -> L<<557.0,530.0>--<571.0,736.0>>
 
 	* uni2206 (U+2206): L<<484.0,720.0>--<866.0,2.0>> -> L<<866.0,2.0>--<867.0,0.0>>
@@ -8438,14 +8721,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<143.0,730.0>--<128.0,520.0>> -> L<<128.0,520.0>--<115.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -8494,15 +8770,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8573,29 +8846,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -8710,7 +8960,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -8778,6 +9028,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<405.0,-45.0>--<377.0,0.0>> -> L<<377.0,0.0>--<232.0,222.0>>
 
+	* uni051B (U+051B): L<<387.0,-216.0>--<402.0,0.0>> -> L<<402.0,0.0>--<413.0,93.0>>
+
 	* uni1E0D (U+1E0D): L<<437.0,427.0>--<438.0,520.0>> -> L<<438.0,520.0>--<453.0,736.0>>
 
 	* uniA78B (U+A78B): L<<123.0,731.0>--<100.0,409.0>> -> L<<100.0,409.0>--<80.0,196.0>>
@@ -8789,14 +9041,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<55.0,409.0>--<58.0,520.0>> -> L<<58.0,520.0>--<73.0,730.0>> 
 
 	* zeta (U+03B6): L<<394.0,562.0>--<393.0,545.0>> -> L<<393.0,545.0>--<392.0,520.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[26] NonBureauItalic-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -8836,8 +9081,8 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Italic Bold | Non Bureau Italic |
-| Subfamily Name | Italic | Bold |
+| Family Name | Non Bureau Italic Thin | Non Bureau Italic |
+| Subfamily Name | Bold Italic | Bold |
 | Full Name | Non Bureau Italic Bold | Non Bureau Italic Bold |
 | Poscript Name | NonBureauItalic-Bold | NonBureauItalic-Bold |
 | Typographic Family Name | Non Bureau Italic | N/A |
@@ -8845,15 +9090,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8910,44 +9152,23 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** head macStyle ITALIC bit should be unset. [code: bad-ITALIC]
-* 🔥 **FAIL** head macStyle BOLD bit should be set. [code: bad-BOLD]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2 fsSelection ITALIC bit should be unset. [code: bad-ITALIC]
-* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be set. [code: bad-BOLD]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking post.italicAngle value. (derived from com.google.fonts/check/italic_angle) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/post.html#com.google.fonts/check/italic_angle">com.google.fonts/check/italic_angle</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
+
+
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Italic Bold' does not begin with the font family name 'Non Bureau Italic Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -8964,7 +9185,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Italic Bold' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Italic Thin' / SUBFAMILY_NAME = 'Bold Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -9062,7 +9283,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -9146,6 +9367,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<388.0,259.0>--<494.0,96.0>> -> L<<494.0,96.0>--<506.0,76.0>>
 
+	* uni051B (U+051B): L<<362.0,-216.0>--<375.0,-24.0>> -> L<<375.0,-24.0>--<384.0,35.0>>
+
 	* uni1E0D (U+1E0D): L<<416.0,485.0>--<415.0,544.0>> -> L<<415.0,544.0>--<428.0,736.0>>
 
 	* uni2206 (U+2206): L<<469.0,720.0>--<836.0,2.0>> -> L<<836.0,2.0>--<837.0,0.0>>
@@ -9159,14 +9382,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> 
 
 	* zeta (U+03B6): L<<479.0,564.0>--<471.0,456.0>> -> L<<471.0,456.0>--<471.0,421.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauExtended-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -9202,15 +9418,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -9268,29 +9481,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -9414,7 +9604,207 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* Q (U+0051): X=546.0,Y=1.0 (should be at baseline 0?)
+
+	* f (U+0066): X=106.0,Y=518.0 (should be at x-height 520?)
+
+	* r (U+0072): X=432.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=100.0,Y=518.0 (should be at x-height 520?)
+
+	* t (U+0074): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* braceleft (U+007B): X=243.0,Y=1.0 (should be at baseline 0?)
+
+	* braceleft (U+007B): X=302.0,Y=1.0 (should be at baseline 0?)
+
+	* bar (U+007C): X=27.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=170.0,Y=715.0 (should be at cap-height 714?)
+
+	* braceright (U+007D): X=23.0,Y=1.0 (should be at baseline 0?)
+
+	* braceright (U+007D): X=82.0,Y=1.0 (should be at baseline 0?)
+
+	* sterling (U+00A3): X=344.0,Y=713.5 (should be at cap-height 714?)
+
+	* section (U+00A7): X=248.0,Y=2.0 (should be at baseline 0?)
+
+	* ordfeminine (U+00AA): X=166.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni00B5 (U+00B5): X=225.5,Y=0.5 (should be at baseline 0?)
+
+	* ordmasculine (U+00BA): X=185.0,Y=713.0 (should be at cap-height 714?)
+
+	* ordmasculine (U+00BA): X=185.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=495.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=186.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=498.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=189.0,Y=713.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=285.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=410.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=469.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=160.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=378.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=69.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=460.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=151.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0163 (U+0163): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* tcaron (U+0165): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* tbar (U+0167): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* florin (U+0192): X=319.5,Y=715.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=472.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=163.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=499.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=190.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=518.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=209.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni021B (U+021B): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni023C (U+023C): X=225.0,Y=1.0 (should be at baseline 0?)
+
+	* dieresistonos (U+0385): X=253.0,Y=713.0 (should be at cap-height 714?)
+
+	* dieresistonos (U+0385): X=401.0,Y=713.0 (should be at cap-height 714?)
+
+	* iotadieresistonos (U+0390): X=74.0,Y=713.0 (should be at cap-height 714?)
+
+	* iotadieresistonos (U+0390): X=222.0,Y=713.0 (should be at cap-height 714?)
+
+	* alphatonos (U+03AC): X=735.0,Y=-1.0 (should be at baseline 0?)
+
+	* upsilondieresistonos (U+03B0): X=294.0,Y=713.0 (should be at cap-height 714?)
+
+	* upsilondieresistonos (U+03B0): X=442.0,Y=713.0 (should be at cap-height 714?)
+
+	* alpha (U+03B1): X=735.0,Y=-1.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=339.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=340.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=176.0,Y=-1.0 (should be at baseline 0?)
+
+	* delta (U+03B4): X=284.0,Y=713.0 (should be at cap-height 714?)
+
+	* lambda (U+03BB): X=231.5,Y=716.0 (should be at cap-height 714?)
+
+	* lambda (U+03BB): X=550.0,Y=-1.5 (should be at baseline 0?)
+
+	* uni03C2 (U+03C2): X=361.5,Y=1.5 (should be at baseline 0?)
+
+	* tau (U+03C4): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0409 (U+0409): X=49.0,Y=1.0 (should be at baseline 0?)
+
+	* uni041B (U+041B): X=49.0,Y=1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=34.5,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=3.0,Y=2.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=179.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=13.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=34.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=3.0,Y=2.0 (should be at baseline 0?)
+
+	* uni048F (U+048F): X=480.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04C5 (U+04C5): X=49.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=34.5,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=3.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0512 (U+0512): X=49.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=34.5,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=3.0,Y=2.0 (should be at baseline 0?)
+
+	* uni051A (U+051A): X=546.0,Y=1.0 (should be at baseline 0?)
+
+	* uni1E6D (U+1E6D): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* tmacronbelow (U+1E6F): X=420.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni2016 (U+2016): X=27.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=170.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=320.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=463.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2116 (U+2116): X=1336.0,Y=1.0 (should be at baseline 0?)
+
+	* emptyset (U+2205): X=107.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=931.0,Y=2.0 (should be at baseline 0?)
+
+	* summation (U+2211): X=181.0,Y=-2.0 (should be at baseline 0?)
+
+	* summation (U+2211): X=590.0,Y=-2.0 (should be at baseline 0?)
+
+	* summation (U+2211): X=27.0,Y=-2.0 (should be at baseline 0?)
+
+	* circle (U+25CB): X=215.5,Y=1.0 (should be at baseline 0?)
+
+	* circle (U+25CB): X=654.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=656.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=413.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=426.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=439.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=452.5,Y=-2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=466.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni25CF (U+25CF): X=215.5,Y=1.0 (should be at baseline 0?)
+
+	* uni25CF (U+25CF): X=654.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2C66 (U+2C66): X=420.0,Y=-1.0 (should be at baseline 0?) 
+
+	* f_t (U+FB05): X=730.0,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -9488,6 +9878,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<398.0,-15.0>--<383.0,7.0>> -> L<<383.0,7.0>--<282.0,147.0>>
 
+	* uni051B (U+051B): L<<516.0,-216.0>--<516.0,-19.0>> -> L<<516.0,-19.0>--<521.0,51.0>>
+
 	* uni1E0D (U+1E0D): L<<521.0,469.0>--<516.0,539.0>> -> L<<516.0,539.0>--<516.0,736.0>>
 
 	* uniA78B (U+A78B): L<<157.0,731.0>--<157.0,409.0>> -> L<<157.0,409.0>--<152.0,196.0>>
@@ -9534,6 +9926,14 @@ plusminus
 
 	* psi (U+03C8): L<<380.0,520.0>--<379.0,99.0>>
 
+	* uni046A (U+046A): L<<369.0,0.0>--<370.0,277.0>>
+
+	* uni046A (U+046A): L<<527.0,277.0>--<526.0,0.0>>
+
+	* uni046B (U+046B): L<<268.0,0.0>--<269.0,197.0>>
+
+	* uni046B (U+046B): L<<416.0,197.0>--<415.0,0.0>>
+
 	* uni04BC (U+04BC): L<<365.0,432.0>--<811.0,433.0>>
 
 	* uni04BE (U+04BE): L<<365.0,432.0>--<811.0,433.0>>
@@ -9553,14 +9953,7 @@ plusminus
 	* uni2116 (U+2116): L<<848.0,99.0>--<1336.0,100.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[26] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -9596,15 +9989,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -9662,29 +10052,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -9797,21 +10164,13 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
 	* f (U+0066): X=106.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=175.0,Y=-216.0 (should be at descender -217?)
-
-	* p (U+0070): X=27.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=548.0,Y=-216.0 (should be at descender -217?)
-
-	* q (U+0071): X=400.0,Y=-216.0 (should be at descender -217?)
 
 	* r (U+0072): X=392.0,Y=521.0 (should be at x-height 520?)
 
@@ -9836,10 +10195,6 @@ logicalnot
 	* ordmasculine (U+00BA): X=155.0,Y=713.0 (should be at cap-height 714?)
 
 	* ordmasculine (U+00BA): X=155.0,Y=713.0 (should be at cap-height 714?)
-
-	* thorn (U+00FE): X=175.0,Y=-216.0 (should be at descender -217?)
-
-	* thorn (U+00FE): X=27.0,Y=-216.0 (should be at descender -217?)
 
 	* ccaron (U+010D): X=431.0,Y=713.0 (should be at cap-height 714?)
 
@@ -9915,10 +10270,6 @@ logicalnot
 
 	* uni03BC (U+03BC): X=217.5,Y=1.0 (should be at baseline 0?)
 
-	* rho (U+03C1): X=175.0,Y=-216.0 (should be at descender -217?)
-
-	* rho (U+03C1): X=27.0,Y=-216.0 (should be at descender -217?)
-
 	* uni03C2 (U+03C2): X=361.5,Y=1.5 (should be at baseline 0?)
 
 	* uni0409 (U+0409): X=49.0,Y=1.0 (should be at baseline 0?)
@@ -9929,10 +10280,6 @@ logicalnot
 
 	* uni043B (U+043B): X=3.0,Y=2.0 (should be at baseline 0?)
 
-	* uni0440 (U+0440): X=175.0,Y=-216.0 (should be at descender -217?)
-
-	* uni0440 (U+0440): X=27.0,Y=-216.0 (should be at descender -217?)
-
 	* yacy (U+044F): X=179.0,Y=1.0 (should be at baseline 0?)
 
 	* yacy (U+044F): X=13.0,Y=1.0 (should be at baseline 0?)
@@ -9942,10 +10289,6 @@ logicalnot
 	* uni0459 (U+0459): X=3.0,Y=2.0 (should be at baseline 0?)
 
 	* uni048F (U+048F): X=388.0,Y=-1.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=175.0,Y=-216.0 (should be at descender -217?)
-
-	* uni048F (U+048F): X=27.0,Y=-216.0 (should be at descender -217?)
 
 	* gemiddlehookcy (U+0495): X=364.5,Y=1.0 (should be at baseline 0?)
 
@@ -10071,6 +10414,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<398.0,-15.0>--<383.0,7.0>> -> L<<383.0,7.0>--<282.0,147.0>>
 
+	* uni051B (U+051B): L<<400.0,-216.0>--<400.0,-19.0>> -> L<<400.0,-19.0>--<405.0,46.0>>
+
 	* uni1E0D (U+1E0D): L<<405.0,474.0>--<400.0,539.0>> -> L<<400.0,539.0>--<400.0,736.0>>
 
 	* uniA78B (U+A78B): L<<157.0,731.0>--<157.0,409.0>> -> L<<157.0,409.0>--<152.0,196.0>>
@@ -10119,6 +10464,14 @@ logicalnot
 
 	* uni018F (U+018F): L<<196.0,391.0>--<528.0,393.0>>
 
+	* uni046A (U+046A): L<<369.0,0.0>--<370.0,277.0>>
+
+	* uni046A (U+046A): L<<527.0,277.0>--<526.0,0.0>>
+
+	* uni046B (U+046B): L<<268.0,0.0>--<269.0,197.0>>
+
+	* uni046B (U+046B): L<<416.0,197.0>--<415.0,0.0>>
+
 	* uni04BC (U+04BC): L<<361.0,432.0>--<712.0,433.0>>
 
 	* uni04BE (U+04BE): L<<361.0,432.0>--<712.0,433.0>>
@@ -10134,14 +10487,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,318.0>--<729.0,319.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -10177,15 +10523,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -10243,29 +10586,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -10378,7 +10698,207 @@ logicalnot
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* f (U+0066): X=120.0,Y=518.0 (should be at x-height 520?)
+
+	* r (U+0072): X=356.0,Y=521.0 (should be at x-height 520?)
+
+	* t (U+0074): X=116.0,Y=518.0 (should be at x-height 520?)
+
+	* t (U+0074): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* bar (U+007C): X=33.0,Y=715.0 (should be at cap-height 714?)
+
+	* bar (U+007C): X=130.0,Y=715.0 (should be at cap-height 714?)
+
+	* section (U+00A7): X=141.0,Y=-2.0 (should be at baseline 0?)
+
+	* onehalf (U+00BD): X=357.0,Y=1.0 (should be at baseline 0?)
+
+	* onehalf (U+00BD): X=560.0,Y=1.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=269.0,Y=-2.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=433.0,Y=715.0 (should be at cap-height 714?)
+
+	* eth (U+00F0): X=204.0,Y=714.5 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=392.0,Y=713.0 (should be at cap-height 714?)
+
+	* ccaron (U+010D): X=129.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=397.0,Y=713.0 (should be at cap-height 714?)
+
+	* ecaron (U+011B): X=134.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=260.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcircumflex (U+011D): X=289.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=241.0,Y=716.0 (should be at cap-height 714?)
+
+	* lcaron (U+013E): X=335.0,Y=716.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=393.0,Y=713.0 (should be at cap-height 714?)
+
+	* ncaron (U+0148): X=130.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=329.0,Y=713.0 (should be at cap-height 714?)
+
+	* rcaron (U+0159): X=66.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=374.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=111.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0163 (U+0163): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* tcaron (U+0165): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* tbar (U+0167): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0186 (U+0186): X=109.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0186 (U+0186): X=105.5,Y=0.5 (should be at baseline 0?)
+
+	* florin (U+0192): X=10.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni01CE (U+01CE): X=379.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01CE (U+01CE): X=116.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=406.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni01D2 (U+01D2): X=143.0,Y=713.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=406.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=406.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=143.0,Y=712.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=143.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=217.0,Y=716.0 (should be at cap-height 714?)
+
+	* gcaron (U+01E7): X=333.0,Y=716.0 (should be at cap-height 714?)
+
+	* Oslashacute (U+01FE): X=269.0,Y=-2.0 (should be at baseline 0?)
+
+	* Oslashacute (U+01FE): X=433.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni021B (U+021B): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni023B (U+023B): X=438.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni0269 (U+0269): X=233.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresistonos (U+0390): X=233.0,Y=-1.0 (should be at baseline 0?)
+
+	* alphatonos (U+03AC): X=591.0,Y=-2.0 (should be at baseline 0?)
+
+	* iotatonos (U+03AF): X=233.0,Y=-1.0 (should be at baseline 0?)
+
+	* alpha (U+03B1): X=591.0,Y=-2.0 (should be at baseline 0?)
+
+	* beta (U+03B2): X=293.0,Y=715.0 (should be at cap-height 714?)
+
+	* beta (U+03B2): X=132.0,Y=-1.0 (should be at baseline 0?)
+
+	* iota (U+03B9): X=233.0,Y=-1.0 (should be at baseline 0?)
+
+	* lambda (U+03BB): X=168.5,Y=715.5 (should be at cap-height 714?)
+
+	* uni03C2 (U+03C2): X=188.5,Y=0.5 (should be at baseline 0?)
+
+	* tau (U+03C4): X=316.0,Y=-1.0 (should be at baseline 0?)
+
+	* iotadieresis (U+03CA): X=233.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0409 (U+0409): X=51.5,Y=1.0 (should be at baseline 0?)
+
+	* uni041B (U+041B): X=51.5,Y=1.0 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=32.0,Y=0.5 (should be at baseline 0?)
+
+	* uni043B (U+043B): X=7.0,Y=2.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=125.0,Y=1.0 (should be at baseline 0?)
+
+	* yacy (U+044F): X=17.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=32.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0459 (U+0459): X=7.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=489.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04A7 (U+04A7): X=391.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04C5 (U+04C5): X=51.5,Y=1.0 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=32.0,Y=0.5 (should be at baseline 0?)
+
+	* uni04C6 (U+04C6): X=7.0,Y=2.0 (should be at baseline 0?)
+
+	* uni04FC (U+04FC): X=136.0,Y=1.0 (should be at baseline 0?)
+
+	* uni04FC (U+04FC): X=21.0,Y=1.0 (should be at baseline 0?)
+
+	* uni0512 (U+0512): X=51.5,Y=1.0 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=32.0,Y=0.5 (should be at baseline 0?)
+
+	* uni0513 (U+0513): X=7.0,Y=2.0 (should be at baseline 0?)
+
+	* uni1E6D (U+1E6D): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* tmacronbelow (U+1E6F): X=356.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni2016 (U+2016): X=33.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=130.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=280.0,Y=715.0 (should be at cap-height 714?)
+
+	* uni2016 (U+2016): X=377.0,Y=715.0 (should be at cap-height 714?)
+
+	* colonmonetary (U+20A1): X=256.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni20BF (U+20BF): X=362.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni20BF (U+20BF): X=362.0,Y=1.0 (should be at baseline 0?)
+
+	* emptyset (U+2205): X=65.0,Y=1.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
+
+	* uni2206 (U+2206): X=785.0,Y=2.0 (should be at baseline 0?)
+
+	* radical (U+221A): X=226.0,Y=-2.0 (should be at baseline 0?)
+
+	* circle (U+25CB): X=244.5,Y=-1.5 (should be at baseline 0?)
+
+	* circle (U+25CB): X=524.5,Y=-1.5 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=529.0,Y=2.0 (should be at baseline 0?)
+
+	* uni25CC (U+25CC): X=236.0,Y=1.0 (should be at baseline 0?)
+
+	* uni25CF (U+25CF): X=244.5,Y=-1.5 (should be at baseline 0?)
+
+	* uni25CF (U+25CF): X=524.5,Y=-1.5 (should be at baseline 0?)
+
+	* uni2C65 (U+2C65): X=128.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni2C66 (U+2C66): X=356.0,Y=-2.0 (should be at baseline 0?) 
+
+	* f_t (U+FB05): X=650.0,Y=-2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -10446,6 +10966,8 @@ logicalnot
 
 	* uni04FD (U+04FD): L<<412.0,-30.0>--<389.0,4.0>> -> L<<389.0,4.0>--<259.0,185.0>>
 
+	* uni051B (U+051B): L<<410.0,-216.0>--<410.0,-10.0>> -> L<<410.0,-10.0>--<415.0,70.0>>
+
 	* uni1E0D (U+1E0D): L<<415.0,450.0>--<410.0,530.0>> -> L<<410.0,530.0>--<410.0,736.0>>
 
 	* uniA78B (U+A78B): L<<123.0,731.0>--<123.0,409.0>> -> L<<123.0,409.0>--<118.0,196.0>>
@@ -10468,19 +10990,18 @@ logicalnot
 
 	* sterling (U+00A3): L<<242.0,422.0>--<396.0,423.0>>
 
+	* uni046A (U+046A): L<<343.0,0.0>--<344.0,323.0>>
+
+	* uni046A (U+046A): L<<447.0,323.0>--<446.0,0.0>>
+
+	* uni046B (U+046B): L<<252.0,0.0>--<253.0,227.0>>
+
 	* uni20B4 (U+20B4): L<<26.0,311.0>--<717.0,312.0>>
 
 	* uni20B4 (U+20B4): L<<51.0,457.0>--<481.0,458.0>> 
 
 	* uni20BD (U+20BD): L<<239.0,197.0>--<410.0,198.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[29] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -10520,7 +11041,7 @@ But instead we have got:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Italic Extended Thin | Non Bureau Extended Italic Thin |
+| Family Name | Non Bureau Extended Italic Thin | Non Bureau Extended Italic Thin |
 | Subfamily Name | Italic | Regular |
 | Full Name | Non Bureau Extended Italic Thin | Non Bureau Extended Italic Thin |
 | Poscript Name | NonBureauExtendedItalic-Thin | NonBureauExtendedItalic-Thin |
@@ -10529,15 +11050,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -10603,38 +11121,11 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * 🔥 **FAIL** Font is not italic, so post.italicAngle should be equal to zero. [code: non-zero-upright]
-</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
-
-
-* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended Italic Thin' does not begin with the font family name 'Non Bureau Extended Italic Extended Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -10651,7 +11142,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Non Bureau Extended Italic Extended Thin' / SUBFAMILY_NAME = 'Italic'
+ FONT_FAMILY_NAME = 'Non Bureau Extended Italic Thin' / SUBFAMILY_NAME = 'Italic'
 
 Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
@@ -10745,7 +11236,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -10819,6 +11310,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<405.0,-45.0>--<377.0,0.0>> -> L<<377.0,0.0>--<232.0,222.0>>
 
+	* uni051B (U+051B): L<<527.0,-216.0>--<542.0,0.0>> -> L<<542.0,0.0>--<554.0,108.0>>
+
 	* uni1E0D (U+1E0D): L<<575.0,411.0>--<578.0,520.0>> -> L<<578.0,520.0>--<593.0,736.0>>
 
 	* uniA78B (U+A78B): L<<123.0,731.0>--<100.0,409.0>> -> L<<100.0,409.0>--<80.0,196.0>>
@@ -10828,14 +11321,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<113.0,730.0>--<98.0,520.0>> -> L<<98.0,520.0>--<85.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<55.0,409.0>--<58.0,520.0>> -> L<<58.0,520.0>--<73.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[28] NonBureauItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -10884,15 +11370,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -10963,29 +11446,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -11100,7 +11560,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -11178,6 +11638,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni04FD (U+04FD): L<<387.0,-21.0>--<369.0,6.0>> -> L<<369.0,6.0>--<264.0,166.0>>
 
+	* uni051B (U+051B): L<<372.0,-216.0>--<386.0,-14.0>> -> L<<386.0,-14.0>--<396.0,58.0>>
+
 	* uni1E0D (U+1E0D): L<<425.0,462.0>--<424.0,535.0>> -> L<<424.0,535.0>--<438.0,736.0>>
 
 	* uniA78B (U+A78B): L<<173.0,731.0>--<150.0,409.0>> -> L<<150.0,409.0>--<130.0,196.0>>
@@ -11189,14 +11651,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> 
 
 	* zeta (U+03B6): L<<445.0,563.0>--<440.0,492.0>> -> L<<440.0,492.0>--<440.0,461.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[26] NonBureauExtended-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureauExtended-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -11232,15 +11687,12 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2.sTypoLineGap is "47" it should be 0 [code: bad-OS/2.sTypoLineGap]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 233, but got 217 instead. [code: descent]
+* 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoAscender (936) and hhea ascent (983) must be equal. [code: ascender]
+* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -11298,29 +11750,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 * ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* ⚠ **WARN** GF_Cyrillic_Plus is almost fulfilled. Missing codepoints:
-
-	- 0x046A (CYRILLIC CAPITAL LETTER BIG YUS)
-
-
-	- 0x051A (CYRILLIC CAPITAL LETTER QA)
-
-
-	- 0x046B (CYRILLIC SMALL LETTER BIG YUS)
- 
-
-	- 0x051B (CYRILLIC SMALL LETTER QA)
- [code: missing-codepoints]
-* ⚠ **WARN** GF_Greek_Core is almost fulfilled. Missing codepoints:
-
-	- 0x03CF (GREEK CAPITAL KAI SYMBOL)
- 
-
-	- 0x03D7 (GREEK KAI SYMBOL)
- [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -11440,7 +11869,7 @@ plusminus
 </div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -11534,6 +11963,8 @@ plusminus
 
 	* uni04FD (U+04FD): L<<419.0,-38.0>--<392.0,2.0>> -> L<<392.0,2.0>--<247.0,203.0>>
 
+	* uni051B (U+051B): L<<549.0,-216.0>--<549.0,-5.0>> -> L<<549.0,-5.0>--<554.0,94.0>>
+
 	* uni1E0D (U+1E0D): L<<554.0,426.0>--<549.0,525.0>> -> L<<549.0,525.0>--<549.0,736.0>>
 
 	* uniA78B (U+A78B): L<<107.0,731.0>--<107.0,409.0>> -> L<<107.0,409.0>--<102.0,196.0>>
@@ -11570,6 +12001,12 @@ plusminus
 
 	* psi (U+03C8): L<<322.0,520.0>--<321.0,47.0>>
 
+	* uni046A (U+046A): L<<329.0,0.0>--<330.0,347.0>>
+
+	* uni046A (U+046A): L<<407.0,347.0>--<406.0,0.0>>
+
+	* uni046B (U+046B): L<<245.0,0.0>--<246.0,241.0>>
+
 	* uni04E9 (U+04E9): L<<107.0,302.0>--<549.0,303.0>>
 
 	* uni04EB (U+04EB): L<<107.0,302.0>--<549.0,303.0>>
@@ -11583,8 +12020,8 @@ plusminus
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 412 | 359 | 3320 | 176 | 2162 | 0 |
-| 0% | 6% | 6% | 52% | 3% | 34% | 0% |
+| 0 | 353 | 339 | 3320 | 173 | 2244 | 0 |
+| 0% | 5% | 5% | 52% | 3% | 35% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
