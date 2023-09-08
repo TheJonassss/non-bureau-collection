@@ -2,7 +2,39 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[1] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Verify that family names in the name table are consistent across all fonts in the family. Checks Typographic Family name (nameID 16) if present,  otherwise uses Font Family name (nameID 1) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/consistent_family_name">com.adobe.fonts/check/family/consistent_family_name</a>)</summary><div>
+<details><summary><b>[2] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Each font in a family must have the same set of vertical metrics values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/vertical_metrics">com.google.fonts/check/family/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** sTypoLineGap is not the same across the family:
+Non Bureau Extended Black: 170
+Non Bureau Extended: 837
+Non Bureau Extended Bold: 337
+Non Bureau Italic Light: 1003
+Non Bureau Extended Thin: 1170
+Non Bureau Extended Medium: 670
+Non Bureau Italic Black: 170
+Non Bureau Italic SemiBold: 503
+Non Bureau Medium: 1170
+Non Bureau Extended Italic Black: 170
+Non Bureau Italic: 837
+Non Bureau Thin: 1170
+Non Bureau Bold: 1170
+Non Bureau Light: 1170
+Non Bureau Extended Italic Light: 1003
+Non Bureau Extended Italic Bold: 337
+Non Bureau Extended Italic SemiBold: 503
+Non Bureau Extended Italic Medium: 670
+Non Bureau Black: 1170
+Non Bureau Extended Italic: 837
+Non Bureau Italic Thin: 1170
+Non Bureau Italic Bold: 337
+Non Bureau Extended SemiBold: 503
+Non Bureau SemiBold: 1170
+Non Bureau: 1170
+Non Bureau Extended Italic Thin: 1170
+Non Bureau Italic Medium: 670
+Non Bureau Extended Light: 1003 [code: sTypoLineGap-mismatch]
+</div></details><details><summary>🔥 <b>FAIL:</b> Verify that family names in the name table are consistent across all fonts in the family. Checks Typographic Family name (nameID 16) if present,  otherwise uses Font Family name (nameID 1) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/consistent_family_name">com.adobe.fonts/check/family/consistent_family_name</a>)</summary><div>
 
 
 * 🔥 **FAIL** 4 different Font Family names were found:
@@ -91,12 +123,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (170) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -500,12 +533,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "837" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (837) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -1073,12 +1107,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "337" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (337) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -1713,12 +1748,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1003" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (1003) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -2004,7 +2040,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<52.0,409.0>--<55.0,520.0>> -> L<<55.0,520.0>--<70.0,730.0>> 
 
 	* zeta (U+03B6): L<<411.0,562.0>--<409.0,527.0>> -> L<<409.0,527.0>--<408.0,500.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[24] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -2040,12 +2076,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -2541,12 +2574,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "670" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (670) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3111,12 +3145,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (170) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3437,12 +3472,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "503" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (503) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -3714,7 +3750,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> 
 
 	* zeta (U+03B6): L<<462.0,563.0>--<456.0,474.0>> -> L<<456.0,474.0>--<455.0,441.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[23] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[22] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -3750,12 +3786,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -4285,12 +4318,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (170) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -4607,12 +4641,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "837" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (837) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -4898,7 +4933,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> 
 
 	* zeta (U+03B6): L<<428.0,563.0>--<424.0,509.0>> -> L<<424.0,509.0>--<424.0,480.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[22] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[21] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -4934,12 +4969,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -5353,7 +5385,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni046A (U+046A): L<<367.0,370.0>--<366.0,0.0>> 
 
 	* uni046B (U+046B): L<<237.0,0.0>--<238.0,256.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -5402,12 +5434,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -5950,7 +5979,7 @@ logicalnot
 	* uni20BD (U+20BD): L<<330.0,198.0>--<507.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[22] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -5986,12 +6015,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -6543,12 +6569,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1003" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (1003) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7073,12 +7100,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "337" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (337) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7404,12 +7432,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "503" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (503) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -7726,12 +7755,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "670" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (670) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8009,7 +8039,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<158.0,730.0>--<143.0,520.0>> -> L<<143.0,520.0>--<130.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[26] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -8058,12 +8088,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8436,12 +8463,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "837" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (837) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -8721,7 +8749,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<143.0,730.0>--<128.0,520.0>> -> L<<128.0,520.0>--<115.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[25] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -8770,12 +8798,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -9090,12 +9115,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "337" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (337) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -9418,12 +9444,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "503" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (503) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -9953,7 +9980,7 @@ plusminus
 	* uni2116 (U+2116): L<<848.0,99.0>--<1336.0,100.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[22] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -9989,12 +10016,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -10487,7 +10511,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,318.0>--<729.0,319.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[22] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -10523,12 +10547,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -11001,7 +11022,7 @@ logicalnot
 	* uni20B4 (U+20B4): L<<51.0,457.0>--<481.0,458.0>> 
 
 	* uni20BD (U+20BD): L<<239.0,197.0>--<410.0,198.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] NonBureauExtendedItalic-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Substitute copyright, registered and trademark symbols in name table entries. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/unwanted_chars">com.google.fonts/check/name/unwanted_chars</a>)</summary><div>
 
 
 * 🔥 **FAIL** NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]
@@ -11050,12 +11071,9 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1170" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -11370,12 +11388,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "670" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (670) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -11687,12 +11706,13 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
+* 🔥 **FAIL** OS/2.sTypoLineGap is "1003" it should be 0 [code: bad-OS/2.sTypoLineGap]
 * 🔥 **FAIL** hhea.lineGap is "1170" it should be 0 [code: bad-hhea.lineGap]
 * 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 2346 when it should be at most 2000 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
 
 
-* 🔥 **FAIL** OS/2 sTypoLineGap (0) and hhea lineGap (1170) must be equal. [code: lineGap]
+* 🔥 **FAIL** OS/2 sTypoLineGap (1003) and hhea lineGap (1170) must be equal. [code: lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
@@ -12020,7 +12040,7 @@ plusminus
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 353 | 339 | 3320 | 173 | 2244 | 0 |
+| 0 | 344 | 339 | 3320 | 173 | 2253 | 0 |
 | 0% | 5% | 5% | 52% | 3% | 35% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
