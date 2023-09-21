@@ -1,4 +1,4 @@
-# Non Bureau Collection
+# The Non Bureau Font Project
 
 [![][Fontbakery]](https://TheJonassss.github.io/non-bureau-collection/fontbakery/fontbakery-report.html)
 [![][Universal]](https://TheJonassss.github.io/non-bureau-collection/fontbakery/fontbakery-report.html)
