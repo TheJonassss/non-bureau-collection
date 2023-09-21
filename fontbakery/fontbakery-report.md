@@ -1527,7 +1527,7 @@ plusminus
 	* uni2116 (U+2116): L<<872.0,114.0>--<1360.0,115.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[16] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -1539,52 +1539,6 @@ plusminus
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -3049,7 +3003,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<173.0,730.0>--<158.0,520.0>> -> L<<158.0,520.0>--<145.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[17] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NonBureau-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -3061,52 +3015,6 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -3957,7 +3865,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni2116 (U+2116): L<<895.0,128.0>--<1384.0,129.0>> 
 
 	* uniAB53 (U+AB53): L<<10.0,361.0>--<11.0,521.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[17] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NonBureau-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -3969,52 +3877,6 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -5083,7 +4945,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<158.0,730.0>--<143.0,520.0>> -> L<<143.0,520.0>--<130.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<45.0,409.0>--<48.0,520.0>> -> L<<48.0,520.0>--<63.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[17] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NonBureau-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -5095,52 +4957,6 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -6978,7 +6794,7 @@ plusminus
 	* uni20BD (U+20BD): L<<235.0,197.0>--<406.0,198.0>> 
 
 	* uni25B5 (U+25B5): L<<546.0,112.0>--<20.0,113.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[17] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NonBureau-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -6990,52 +6806,6 @@ plusminus
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -7837,7 +7607,7 @@ plusminus
 	* uni20B4 (U+20B4): L<<26.0,308.0>--<781.0,309.0>> 
 
 	* uni2116 (U+2116): L<<778.0,56.0>--<1263.0,57.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[20] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[19] NonBureau-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -7862,52 +7632,6 @@ plusminus
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -9320,7 +9044,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<188.0,730.0>--<173.0,520.0>> -> L<<173.0,520.0>--<160.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[19] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[18] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -9345,52 +9069,6 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.1 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
-
-	- acutecomb
-
-	- dotbelowcomb
-
-	- gravecomb
-
-	- tildecomb
-
-	- uni0302
-
-	- uni0304
-
-	- uni0306
-
-	- uni0307
-
-	- uni0308
-
-	- uni030A
-
-	- uni030B
-
-	- uni030C
-
-	- uni0312
-
-	- uni0313
-
-	- uni0315
-
-	- uni0326
-
-	- uni0327
-
-	- uni0328
-
-	- uni032E
-
-	- uni0331 
-
-	- uni0332 [code: unattached-dotted-circle-marks]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -11488,7 +11166,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 276 | 332 | 3320 | 173 | 2328 | 0 |
+| 0 | 269 | 332 | 3320 | 173 | 2335 | 0 |
 | 0% | 4% | 5% | 52% | 3% | 36% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
