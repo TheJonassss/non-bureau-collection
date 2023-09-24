@@ -2,14 +2,103 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[15] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+<details><summary><b>[1] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Each font in a family must have the same set of vertical metrics values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/vertical_metrics">com.google.fonts/check/family/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** sTypoAscender is not the same across the family:
+Non Bureau Thin: 940
+Non Bureau Black Italic: 936
+Non Bureau SemiBold Italic: 937
+Non Bureau Bold Italic: 937
+Non Bureau Thin Italic: 940
+Non Bureau SemiBold: 937
+Non Bureau Medium: 938
+Non Bureau: 939
+Non Bureau Light: 939
+Non Bureau Black: 936
+Non Bureau Medium Italic: 938
+Non Bureau Regular Italic: 939
+Non Bureau Bold: 937
+Non Bureau Light Italic: 939 [code: sTypoAscender-mismatch]
+* 🔥 **FAIL** sTypoDescender is not the same across the family:
+Non Bureau Thin: -260
+Non Bureau Black Italic: -240
+Non Bureau SemiBold Italic: -247
+Non Bureau Bold Italic: -243
+Non Bureau Thin Italic: -260
+Non Bureau SemiBold: -247
+Non Bureau Medium: -250
+Non Bureau: -253
+Non Bureau Light: -257
+Non Bureau Black: -240
+Non Bureau Medium Italic: -250
+Non Bureau Regular Italic: -253
+Non Bureau Bold: -243
+Non Bureau Light Italic: -257 [code: sTypoDescender-mismatch]
+* 🔥 **FAIL** usWinAscent is not the same across the family:
+Non Bureau Thin: 940
+Non Bureau Black Italic: 936
+Non Bureau SemiBold Italic: 937
+Non Bureau Bold Italic: 937
+Non Bureau Thin Italic: 940
+Non Bureau SemiBold: 937
+Non Bureau Medium: 938
+Non Bureau: 939
+Non Bureau Light: 939
+Non Bureau Black: 936
+Non Bureau Medium Italic: 938
+Non Bureau Regular Italic: 939
+Non Bureau Bold: 937
+Non Bureau Light Italic: 939 [code: usWinAscent-mismatch]
+* 🔥 **FAIL** usWinDescent is not the same across the family:
+Non Bureau Thin: 260
+Non Bureau Black Italic: 240
+Non Bureau SemiBold Italic: 247
+Non Bureau Bold Italic: 243
+Non Bureau Thin Italic: 260
+Non Bureau SemiBold: 247
+Non Bureau Medium: 250
+Non Bureau: 253
+Non Bureau Light: 257
+Non Bureau Black: 240
+Non Bureau Medium Italic: 250
+Non Bureau Regular Italic: 253
+Non Bureau Bold: 243
+Non Bureau Light Italic: 257 [code: usWinDescent-mismatch]
+* 🔥 **FAIL** ascent is not the same across the family:
+Non Bureau Thin: 940
+Non Bureau Black Italic: 936
+Non Bureau SemiBold Italic: 937
+Non Bureau Bold Italic: 937
+Non Bureau Thin Italic: 940
+Non Bureau SemiBold: 937
+Non Bureau Medium: 938
+Non Bureau: 939
+Non Bureau Light: 939
+Non Bureau Black: 936
+Non Bureau Medium Italic: 938
+Non Bureau Regular Italic: 939
+Non Bureau Bold: 937
+Non Bureau Light Italic: 939 [code: ascent-mismatch]
+* 🔥 **FAIL** descent is not the same across the family:
+Non Bureau Thin: -260
+Non Bureau Black Italic: -240
+Non Bureau SemiBold Italic: -247
+Non Bureau Bold Italic: -243
+Non Bureau Thin Italic: -260
+Non Bureau SemiBold: -247
+Non Bureau Medium: -250
+Non Bureau: -253
+Non Bureau Light: -257
+Non Bureau Black: -240
+Non Bureau Medium Italic: -250
+Non Bureau Regular Italic: -253
+Non Bureau Bold: -243
+Non Bureau Light Italic: -257 [code: descent-mismatch]
+</div></details><br></div></details><details><summary><b>[14] NonBureau-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
-
-
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -612,7 +701,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1184 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -825,7 +914,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1180 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -1043,14 +1132,10 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<38.0,409.0>--<41.0,520.0>> -> L<<41.0,520.0>--<56.0,730.0>> 
 
 	* zeta (U+03B6): L<<479.0,564.0>--<471.0,456.0>> -> L<<471.0,456.0>--<471.0,421.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[13] NonBureau-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NonBureau-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
-
-
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -1257,7 +1342,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1184 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -1523,6 +1608,14 @@ logicalnot
 
 	* uni0513 (U+0513): X=3.0,Y=2.0 (should be at baseline 0?)
 
+	* uni1E50 (U+1E50): X=246.0,Y=936.0 (should be at ascender 937?)
+
+	* uni1E50 (U+1E50): X=384.0,Y=936.0 (should be at ascender 937?)
+
+	* uni1E52 (U+1E52): X=346.0,Y=936.0 (should be at ascender 937?)
+
+	* uni1E52 (U+1E52): X=484.0,Y=936.0 (should be at ascender 937?)
+
 	* uni1E6D (U+1E6D): X=380.0,Y=-1.0 (should be at baseline 0?)
 
 	* tmacronbelow (U+1E6F): X=380.0,Y=-1.0 (should be at baseline 0?)
@@ -1711,7 +1804,7 @@ logicalnot
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1188 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -1979,6 +2072,14 @@ logicalnot
 
 	* uni0513 (U+0513): X=5.0,Y=2.0 (should be at baseline 0?)
 
+	* uni1E50 (U+1E50): X=250.0,Y=936.0 (should be at ascender 938?)
+
+	* uni1E50 (U+1E50): X=371.0,Y=936.0 (should be at ascender 938?)
+
+	* uni1E52 (U+1E52): X=351.0,Y=936.0 (should be at ascender 938?)
+
+	* uni1E52 (U+1E52): X=472.0,Y=936.0 (should be at ascender 938?)
+
 	* uni1E6D (U+1E6D): X=368.0,Y=-1.0 (should be at baseline 0?)
 
 	* tmacronbelow (U+1E6F): X=368.0,Y=-1.0 (should be at baseline 0?)
@@ -2153,7 +2254,7 @@ logicalnot
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1192 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -2587,7 +2688,7 @@ logicalnot
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1196 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -3349,7 +3450,7 @@ logicalnot
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1188 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -3579,7 +3680,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1192 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -3799,7 +3900,7 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<48.0,409.0>--<51.0,520.0>> -> L<<51.0,520.0>--<66.0,730.0>> 
 
 	* zeta (U+03B6): L<<428.0,563.0>--<424.0,509.0>> -> L<<424.0,509.0>--<424.0,480.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[18] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[17] NonBureau-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
@@ -3819,7 +3920,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1180 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -3948,208 +4049,6 @@ The following math glyphs have a different width, though:
 Width = 524:
 logicalnot
  [code: width-outliers]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=485.0,Y=1.0 (should be at baseline 0?)
-
-	* b (U+0062): X=242.0,Y=2.0 (should be at baseline 0?)
-
-	* b (U+0062): X=249.0,Y=519.5 (should be at x-height 520?)
-
-	* d (U+0064): X=343.0,Y=519.5 (should be at x-height 520?)
-
-	* d (U+0064): X=349.0,Y=2.0 (should be at baseline 0?)
-
-	* f (U+0066): X=100.0,Y=518.0 (should be at x-height 520?)
-
-	* p (U+0070): X=249.0,Y=0.5 (should be at baseline 0?)
-
-	* p (U+0070): X=242.0,Y=518.0 (should be at x-height 520?)
-
-	* q (U+0071): X=349.0,Y=518.0 (should be at x-height 520?)
-
-	* q (U+0071): X=343.0,Y=0.5 (should be at baseline 0?)
-
-	* r (U+0072): X=411.0,Y=521.0 (should be at x-height 520?)
-
-	* t (U+0074): X=91.0,Y=518.0 (should be at x-height 520?)
-
-	* bar (U+007C): X=23.0,Y=715.0 (should be at cap-height 714?)
-
-	* bar (U+007C): X=190.0,Y=715.0 (should be at cap-height 714?)
-
-	* ordfeminine (U+00AA): X=142.0,Y=713.0 (should be at cap-height 714?)
-
-	* ordmasculine (U+00BA): X=157.0,Y=713.0 (should be at cap-height 714?)
-
-	* ordmasculine (U+00BA): X=157.0,Y=713.0 (should be at cap-height 714?)
-
-	* germandbls (U+00DF): X=380.5,Y=714.5 (should be at cap-height 714?)
-
-	* thorn (U+00FE): X=249.0,Y=0.5 (should be at baseline 0?)
-
-	* ccaron (U+010D): X=450.0,Y=713.0 (should be at cap-height 714?)
-
-	* ccaron (U+010D): X=117.0,Y=713.0 (should be at cap-height 714?)
-
-	* dcaron (U+010F): X=349.0,Y=2.0 (should be at baseline 0?)
-
-	* ecaron (U+011B): X=459.0,Y=713.0 (should be at cap-height 714?)
-
-	* ecaron (U+011B): X=126.0,Y=713.0 (should be at cap-height 714?)
-
-	* ij (U+0133): X=332.0,Y=2.0 (should be at baseline 0?)
-
-	* lcaron (U+013E): X=307.0,Y=716.0 (should be at cap-height 714?)
-
-	* lcaron (U+013E): X=447.0,Y=716.0 (should be at cap-height 714?)
-
-	* ncaron (U+0148): X=461.0,Y=713.0 (should be at cap-height 714?)
-
-	* ncaron (U+0148): X=128.0,Y=713.0 (should be at cap-height 714?)
-
-	* Eng (U+014A): X=507.0,Y=1.0 (should be at baseline 0?)
-
-	* rcaron (U+0159): X=394.0,Y=713.0 (should be at cap-height 714?)
-
-	* rcaron (U+0159): X=61.0,Y=713.0 (should be at cap-height 714?)
-
-	* scaron (U+0161): X=433.0,Y=713.0 (should be at cap-height 714?)
-
-	* scaron (U+0161): X=100.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni01CE (U+01CE): X=440.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni01CE (U+01CE): X=107.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni01D2 (U+01D2): X=460.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni01D2 (U+01D2): X=127.0,Y=713.0 (should be at cap-height 714?)
-
-	* gcaron (U+01E7): X=477.0,Y=713.0 (should be at cap-height 714?)
-
-	* gcaron (U+01E7): X=144.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni023B (U+023B): X=471.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni0263 (U+0263): X=28.0,Y=-2.0 (should be at baseline 0?)
-
-	* uni0263 (U+0263): X=512.0,Y=-2.0 (should be at baseline 0?)
-
-	* beta (U+03B2): X=323.0,Y=715.0 (should be at cap-height 714?)
-
-	* beta (U+03B2): X=197.0,Y=-1.0 (should be at baseline 0?)
-
-	* delta (U+03B4): X=250.5,Y=713.5 (should be at cap-height 714?)
-
-	* uni03BC (U+03BC): X=236.5,Y=-1.5 (should be at baseline 0?)
-
-	* rho (U+03C1): X=249.0,Y=0.5 (should be at baseline 0?)
-
-	* uni0409 (U+0409): X=47.5,Y=1.0 (should be at baseline 0?)
-
-	* uni041B (U+041B): X=47.5,Y=1.0 (should be at baseline 0?)
-
-	* uni043B (U+043B): X=35.5,Y=0.5 (should be at baseline 0?)
-
-	* uni043B (U+043B): X=2.0,Y=2.0 (should be at baseline 0?)
-
-	* uni0440 (U+0440): X=249.0,Y=0.5 (should be at baseline 0?)
-
-	* yacy (U+044F): X=205.0,Y=1.0 (should be at baseline 0?)
-
-	* yacy (U+044F): X=12.0,Y=1.0 (should be at baseline 0?)
-
-	* uni0459 (U+0459): X=35.5,Y=0.5 (should be at baseline 0?)
-
-	* uni0459 (U+0459): X=2.0,Y=2.0 (should be at baseline 0?)
-
-	* uni048F (U+048F): X=249.0,Y=0.5 (should be at baseline 0?)
-
-	* uni04BE (U+04BE): X=660.0,Y=-2.0 (should be at baseline 0?)
-
-	* uni04BF (U+04BF): X=572.0,Y=-2.0 (should be at baseline 0?)
-
-	* uni04C3 (U+04C3): X=425.0,Y=1.5 (should be at baseline 0?)
-
-	* uni04C4 (U+04C4): X=349.0,Y=0.5 (should be at baseline 0?)
-
-	* uni04C5 (U+04C5): X=47.5,Y=1.0 (should be at baseline 0?)
-
-	* uni04C6 (U+04C6): X=35.5,Y=0.5 (should be at baseline 0?)
-
-	* uni04C6 (U+04C6): X=2.0,Y=2.0 (should be at baseline 0?)
-
-	* uni0512 (U+0512): X=47.5,Y=1.0 (should be at baseline 0?)
-
-	* uni0513 (U+0513): X=35.5,Y=0.5 (should be at baseline 0?)
-
-	* uni0513 (U+0513): X=2.0,Y=2.0 (should be at baseline 0?)
-
-	* uni051A (U+051A): X=485.0,Y=1.0 (should be at baseline 0?)
-
-	* uni051B (U+051B): X=343.0,Y=0.5 (should be at baseline 0?)
-
-	* uni1E0D (U+1E0D): X=349.0,Y=2.0 (should be at baseline 0?)
-
-	* dmacronbelow (U+1E0F): X=349.0,Y=2.0 (should be at baseline 0?)
-
-	* uni1E14 (U+1E14): X=128.0,Y=935.0 (should be at ascender 936?)
-
-	* uni1E14 (U+1E14): X=285.0,Y=935.0 (should be at ascender 936?)
-
-	* uni1E16 (U+1E16): X=248.0,Y=935.0 (should be at ascender 936?)
-
-	* uni1E16 (U+1E16): X=404.0,Y=935.0 (should be at ascender 936?)
-
-	* uni2016 (U+2016): X=23.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni2016 (U+2016): X=190.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni2016 (U+2016): X=340.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni2016 (U+2016): X=507.0,Y=715.0 (should be at cap-height 714?)
-
-	* lira (U+20A4): X=332.0,Y=713.0 (should be at cap-height 714?)
-
-	* uni20BF (U+20BF): X=403.0,Y=2.0 (should be at baseline 0?)
-
-	* emptyset (U+2205): X=76.0,Y=1.0 (should be at baseline 0?)
-
-	* uni2206 (U+2206): X=20.0,Y=2.0 (should be at baseline 0?)
-
-	* uni2206 (U+2206): X=855.0,Y=2.0 (should be at baseline 0?)
-
-	* triagup (U+25B2): X=402.0,Y=715.0 (should be at cap-height 714?)
-
-	* triagup (U+25B2): X=404.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25B3 (U+25B3): X=402.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25B3 (U+25B3): X=404.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25B6 (U+25B6): X=23.0,Y=1.0 (should be at baseline 0?)
-
-	* uni25B7 (U+25B7): X=23.0,Y=1.0 (should be at baseline 0?)
-
-	* triagdn (U+25BC): X=20.0,Y=715.0 (should be at cap-height 714?)
-
-	* triagdn (U+25BC): X=787.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25BD (U+25BD): X=787.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25BD (U+25BD): X=20.0,Y=715.0 (should be at cap-height 714?)
-
-	* uni25C0 (U+25C0): X=683.0,Y=1.0 (should be at baseline 0?)
-
-	* uni25C1 (U+25C1): X=683.0,Y=1.0 (should be at baseline 0?)
-
-	* uni25CC (U+25CC): X=490.0,Y=2.0 (should be at baseline 0?) 
-
-	* uni25CC (U+25CC): X=307.0,Y=2.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4323,7 +4222,7 @@ logicalnot
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1176 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1196 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -4549,7 +4448,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 66 | 145 | 1660 | 85 | 1267 | 0 |
+| 0 | 65 | 144 | 1660 | 85 | 1269 | 0 |
 | 0% | 2% | 4% | 52% | 3% | 39% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
