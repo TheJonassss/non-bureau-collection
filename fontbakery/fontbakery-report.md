@@ -576,7 +576,7 @@ The following glyphs do not have the recommended number of contours:
 | Family Name | Non Bureau Extended Medium | Non Bureau Extended Medium |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended Medium | Non Bureau Extended Medium |
-| Poscript Name | Md | NonBureauExtended-Medium |
+| Poscript Name | ExMd | NonBureauExtended-Medium |
 | Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
 | Typographic Subfamily Name | Medium | Medium | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
@@ -1111,7 +1111,7 @@ plusminus
 | Family Name | Non Bureau Extended | Non Bureau Extended |
 | Subfamily Name | Bold | Bold |
 | Full Name | Non Bureau Extended Bold | Non Bureau Extended Bold |
-| Poscript Name | Bd | NonBureauExtended-Bold | [code: bad-names]
+| Poscript Name | ExBd | NonBureauExtended-Bold | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -2478,7 +2478,7 @@ The following glyphs do not have the recommended number of contours:
 | Family Name | Non Bureau Extended Thin | Non Bureau Extended Thin |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended Thin | Non Bureau Extended Thin |
-| Poscript Name | Th | NonBureauExtended-Thin |
+| Poscript Name | ExTh | NonBureauExtended-Thin |
 | Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
 | Typographic Subfamily Name | Thin | Thin | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
@@ -4587,7 +4587,7 @@ The following glyphs do not have the recommended number of contours:
 | Family Name | Non Bureau Extended Thin | Non Bureau Extended Black |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended Black | Non Bureau Extended Black |
-| Poscript Name | Blk | NonBureauExtended-Black |
+| Poscript Name | ExBlk | NonBureauExtended-Black |
 | Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
 | Typographic Subfamily Name | Black | Black | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
@@ -5839,7 +5839,7 @@ logicalnot
 | Family Name | Non Bureau Extended SemiBold | Non Bureau Extended SemiBold |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended SemiBold | Non Bureau Extended SemiBold |
-| Poscript Name | SmBd | NonBureauExtended-SemiBold |
+| Poscript Name | ExSmBd | NonBureauExtended-SemiBold |
 | Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
 | Typographic Subfamily Name | SemiBold | SemiBold | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
@@ -6388,7 +6388,7 @@ plusminus
 | Family Name | Non Bureau Extended | Non Bureau Extended |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended Regular | Non Bureau Extended Regular |
-| Poscript Name | Rg | NonBureauExtended-Regular | [code: bad-names]
+| Poscript Name | ExRg | NonBureauExtended-Regular | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -7653,7 +7653,7 @@ logicalnot
 | Family Name | Non Bureau Extended Light | Non Bureau Extended Light |
 | Subfamily Name | Regular | Regular |
 | Full Name | Non Bureau Extended Light | Non Bureau Extended Light |
-| Poscript Name | Lt | NonBureauExtended-Light |
+| Poscript Name | ExLt | NonBureauExtended-Light |
 | Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
 | Typographic Subfamily Name | Light | Light | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
