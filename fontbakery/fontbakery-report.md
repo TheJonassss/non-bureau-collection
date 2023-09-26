@@ -38,23 +38,10 @@ Fontbakery version: 0.8.13
   - NonBureau-RegularItalic.ttf (nameID 16)
   - NonBureau-Bold.ttf (nameID 16)
   - NonBureau-LightItalic.ttf (nameID 16) [code: inconsistent-family-name]
-</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-BlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NonBureauExtended-BlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Black | Non Bureau Extended Black |
-| Subfamily Name | Italic | Italic |
-| Full Name | Non Bureau Extended Black Italic | Non Bureau Extended Black Italic |
-| Poscript Name | BlkIt | NonBureauExtended-BlackItalic |
-| Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
-| Typographic Subfamily Name | Black Italic | Black Italic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -295,23 +282,10 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<203.0,730.0>--<188.0,520.0>> -> L<<188.0,520.0>--<175.0,409.0>> 
 
 	* uniA78C (U+A78C): L<<35.0,409.0>--<38.0,520.0>> -> L<<38.0,520.0>--<53.0,730.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NonBureauExtended-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Thin | Non Bureau Extended Thin |
-| Subfamily Name | Italic | Italic |
-| Full Name | Non Bureau Extended Thin Italic | Non Bureau Extended Thin Italic |
-| Poscript Name | ThIt | NonBureauExtended-ThinItalic |
-| Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
-| Typographic Subfamily Name | Thin Italic | Thin Italic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -2440,10 +2414,32 @@ The following glyphs do not have the recommended number of contours:
 	* uniA78C (U+A78C): L<<42.0,409.0>--<45.0,520.0>> -> L<<45.0,520.0>--<60.0,730.0>> 
 
 	* zeta (U+03B6): L<<462.0,563.0>--<456.0,474.0>> -> L<<456.0,474.0>--<455.0,441.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[17] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[21] NonBureauExtended-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
+
+
+* 🔥 **FAIL** Expected "NonBureauExtended-NewValue.ttf. Got NonBureauExtended-Thin.ttf. [code: bad-filename]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 🔥 **FAIL** Best SubFamily name is 'New Value'. Expected OS/2 usWeightClass is 400, got 100. [code: bad-value]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+
+
+* 🔥 **FAIL** Font names are incorrect:
+
+| nameID | current | expected |
+| :--- | :--- | :--- |
+| Family Name | Non Bureau Extended Thin | Non Bureau Extended New Value |
+| Subfamily Name | Regular | Regular |
+| Full Name | Non Bureau Extended New Value | Non Bureau Extended New Value Regular |
+| Poscript Name | NonBureauExtended-Thin | NonBureauExtendedNewValue-Regular |
+| Typographic Family Name | Non Bureau Extended | N/A |
+| Typographic Subfamily Name | New Value | N/A | [code: bad-names]
+* ⚠ **WARN** Regular missing from full name [code: lacks-regular]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -2500,6 +2496,10 @@ The following glyphs do not have the recommended number of contours:
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ɨ̀ ɨ́ ɨ̂ ɨ̃ ɨ̄ ɨ̈ ɨ̋ ɨ̌ ɨ̧̀ ɨ̧́ ɨ̧̂ ɨ̧̌ ɨ̱̀ ɨ̱́ ɨ̱̈ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
 The dot of soft dotted characters should disappear in other cases, for example: i̦̇ i̦̊ i̦̋ i̦̒ i̦̓ j̦̀ j̦́ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ j̦̒ j̦̓ į̆ į̇ į̈ į̊ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
+
+
+* 🔥 **FAIL** On the 'name' table, the full font name 'Non Bureau Extended New Value' does not begin with the font family name 'Non Bureau Extended Thin' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -2906,23 +2906,10 @@ plusminus
 	* uni046B (U+046B): L<<237.0,0.0>--<238.0,256.0>> 
 
 	* uni25B5 (U+25B5): L<<502.0,133.0>--<20.0,134.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-MediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NonBureauExtended-MediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Medium | Non Bureau Extended Medium |
-| Subfamily Name | Italic | Italic |
-| Full Name | Non Bureau Extended Medium Italic | Non Bureau Extended Medium Italic |
-| Poscript Name | MdIt | NonBureauExtended-MediumItalic |
-| Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
-| Typographic Subfamily Name | Medium Italic | Medium Italic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -4059,23 +4046,10 @@ logicalnot
 	* uni20B4 (U+20B4): L<<26.0,318.0>--<729.0,319.0>> 
 
 	* uniAB53 (U+AB53): L<<13.0,399.0>--<14.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[16] NonBureauExtended-LightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-LightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended Light | Non Bureau Extended Light |
-| Subfamily Name | Italic | Italic |
-| Full Name | Non Bureau Extended Light Italic | Non Bureau Extended Light Italic |
-| Poscript Name | LtIt | NonBureauExtended-LightItalic |
-| Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
-| Typographic Subfamily Name | Light Italic | Light Italic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -6849,23 +6823,10 @@ plusminus
 	* uni20BD (U+20BD): L<<235.0,197.0>--<406.0,198.0>> 
 
 	* uni25B5 (U+25B5): L<<546.0,112.0>--<20.0,113.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-SemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NonBureauExtended-SemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended SemiBold | Non Bureau Extended SemiBold |
-| Subfamily Name | Italic | Italic |
-| Full Name | Non Bureau Extended SemiBold Italic | Non Bureau Extended SemiBold Italic |
-| Poscript Name | SmBdIt | NonBureauExtended-SemiBoldItalic |
-| Typographic Family Name | Non Bureau Extended | Non Bureau Extended |
-| Typographic Subfamily Name | SemiBold Italic | SemiBold Italic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -9154,21 +9115,10 @@ logicalnot
 	* uni20BD (U+20BD): L<<330.0,198.0>--<507.0,199.0>> 
 
 	* uniAB53 (U+AB53): L<<12.0,380.0>--<13.0,522.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NonBureauExtended-BoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NonBureauExtended-BoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Non Bureau Extended | Non Bureau Extended |
-| Subfamily Name | Bold Italic | Bold Italic |
-| Full Name | Non Bureau Extended Bold Italic | Non Bureau Extended Bold Italic |
-| Poscript Name | BdIt | NonBureauExtended-BoldItalic | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
@@ -9664,7 +9614,7 @@ The following glyphs do not have the recommended number of contours:
 | Family Name | Non Bureau Extended Regular | Non Bureau Extended |
 | Subfamily Name | Italic | Italic |
 | Full Name | Non Bureau Extended Regular Italic | Non Bureau Extended Italic |
-| Poscript Name | RgIt | NonBureauExtended-Italic |
+| Poscript Name | NonBureauExtended-RegularItalic | NonBureauExtended-Italic |
 | Typographic Family Name | Non Bureau Extended | N/A |
 | Typographic Subfamily Name | Regular Italic | N/A | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
@@ -9937,7 +9887,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 115 | 303 | 3318 | 169 | 2524 | 0 |
+| 0 | 113 | 303 | 3318 | 169 | 2526 | 0 |
 | 0% | 2% | 5% | 52% | 3% | 39% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
