@@ -1,8 +1,8 @@
 sources:
-  - 01-NonBureau-Normal.glyphspackage
-  - 02-NonBureau-Italic.glyphspackage
-  - 03-NonBureau-Extended.glyphspackage
-  - 04-NonBureau-Extended-Italic.glyphspackage
+  - 01-NonBureau-Normal.glyphs
+  - 02-NonBureau-Italic.glyphs
+  - 03-NonBureau-Extended.glyphs
+  - 04-NonBureau-Extended-Italic.glyphs
   
 axisOrder:
   - wght
