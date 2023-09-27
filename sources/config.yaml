@@ -1,9 +1,9 @@
 sources:
-  - 01-NonBureau-Normal.glyphspackage.zip
-  - 02-NonBureau-Italic.glyphspackage.zip
-  - 03-NonBureau-Extended.glyphspackage.zip
-  - 04-NonBureau-Extended-Italic.glyphspackage.zip
-
+  - 01-NonBureau-Normal.glyphspackage
+  - 02-NonBureau-Italic.glyphspackage
+  - 03-NonBureau-Extended.glyphspackage
+  - 04-NonBureau-Extended-Italic.glyphspackage
+  
 axisOrder:
   - wght
   - ital
